@@ -2,4 +2,4 @@
 
 Topics will be covering 
 
-1. [**Closure**](./Closure/README.md).
+1. [**Closure**](./closure/README.md).
