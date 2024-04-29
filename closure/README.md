@@ -1,3 +1,4 @@
+#### [Go Back ↩](../README.md)
 ## Closure
 
 A closure gives you access to outer functions lexical scope and variable from an inner functions. Every time a new closure to outer function will be created when calling nested function. Below are some examples.
@@ -44,5 +45,3 @@ A closure gives you access to outer functions lexical scope and variable from an
     console.log(counter()); // 10
     console.log(counter()); // 11
     ```
-
-    #### [Go Back ↩](../README.md)
