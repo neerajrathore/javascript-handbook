@@ -1,2 +1,5 @@
-# javascript-handbook
-a minified version and easily understandable of concepts of javascript.
+## javascript-handbook
+
+Topics will be covering 
+
+1. [**Closure**](./closure/README.md).
