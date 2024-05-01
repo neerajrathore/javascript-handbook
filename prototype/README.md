@@ -7,10 +7,9 @@
 - The chain ends when we reach a prototype that has null for its own prototype.
 - `__proto__` = next thing up in prototype chain
 
-There are different type of prototype in js such as 
+There are different ways prototype are used in javascript. 
 
-[**Object Prototype**](./object-prototype/README.md).
-
-[**Function Prototype**](./function-prototype/README.md).
+1. [**Object Prototype**](./object-prototype/README.md).
+2. [**Function Prototype**](./function-prototype/README.md).
 
 
