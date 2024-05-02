@@ -11,5 +11,7 @@ There are different ways prototype are used in javascript.
 
 1. [**Object Prototype**](./object-prototype/README.md).
 2. [**Function Prototype**](./function-prototype/README.md).
+3. [**Constructor Prototype**](./constructor-prototype/README.md).
+4. [**Class Prototype**](./class-prototype/README.md).
 
 
