@@ -2,7 +2,7 @@
 ## Function Prototype
 
   - To get function prototype we use `.prototype` because the constructor have prototype method
-  - `__proto__` = next thing up in prototype chain
+  - `prototype` is used to find next thing up in prototype chain for functions.
   - Root-Object is second last in prototype chain. It's `__proto__` is null
 
   ```javascript
