@@ -1,7 +1,8 @@
 #### [Go Back ↩](../README.md) 
 ## Object Prototype
 
-  JavaScript prototypes are used to access the properties and methods of objects. To get object prototype we use `__proto__`or `Object.getPrototypeOf()`
+  - JavaScript prototypes are used to access the properties and methods of objects. To get object prototype we use `__proto__`or `Object.getPrototypeOf()`
+  - `__proto__` is next thing up in prototype chain for objects.
 
   ```javascript
   const log = console.log
