@@ -1,9 +1,9 @@
 #### [Go Back ↩](../README.md) 
-[Table of Contents](#javascript---basics)
+[Portfolio](#portfolio)
 
-<h3 align="center">Portfolio</h3>
+<!-- <h3 align="center">Portfolio</h3> -->
 
-[Deep and shallow copies](#deep-and-shallow-copies)
+<!-- [Deep and shallow copies](#deep-and-shallow-copies) -->
 
 Deep and shallow copy in variables.
 - [variable](#variable)
@@ -82,7 +82,7 @@ Deep and shallow copy in variables.
     ```
 
 
-#### [Go Top ⬆️](#javascript---basics)
-#### [Go Top ⬆️](#deep-and-shallow-copies)
+<!-- #### [Go Top ⬆️](#javascript---basics)
+#### [Go Top ⬆️](#deep-and-shallow-copies) -->
 
 [🔼 Back to top](#Portfolio)
