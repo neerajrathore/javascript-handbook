@@ -6,3 +6,4 @@ Topics will be covering
 2. [**Hoisting**](./hoisting/README.md).
 3. [**Prototype**](./prototype/README.md).
 4. [**var & let & const**](./var-let-const/README.md).
+4. [**Deep & shallow**](./deep-shallow/README.md).
