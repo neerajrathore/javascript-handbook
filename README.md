@@ -7,3 +7,4 @@ Topics will be covering
 3. [**Prototype**](./prototype/README.md).
 4. [**var & let & const**](./var-let-const/README.md).
 4. [**Deep & shallow**](./deep-shallow/README.md).
+4. [**Try & Catch**](./try-catch/README.md).
