@@ -1,4 +1,4 @@
-<html lang="en">
+{/* <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +13,9 @@
     </form>
     <div id="displayNumber"></div>
 </body>
-</html>
+</html> */}
 
-<script>
+{/* <script> */}
 // business / checkNumber logic
 function checkNumber(number) {
     if (isNaN(number) || number < 0) {
@@ -86,4 +86,4 @@ window.addEventListener("load", function () {
     // browser catches event it sends a callback.
     console.log("end");
 })
-</script>
+// </script>
