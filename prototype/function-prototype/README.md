@@ -1,4 +1,5 @@
 #### [Go Back ↩](../README.md) 
+## Table of Contents
 * [Prototype Chain](#-prototype-chain)
 ## Function Prototype
 
@@ -72,7 +73,7 @@
     new-Object.constructor.prototype --> Root-Object
     Root-Object --> |Root-Object.__proto__|null
   ```
-  ## Prototype Chain
+  ## # Prototype Chain
 
   Create Cat Object as prototype of Animal Object.
 
