@@ -1,4 +1,5 @@
 #### [Go Back ↩](../README.md) 
+* [Prototype Chain](#-prototype-chain)
 ## Function Prototype
 
   - To get function prototype we use `.prototype` because the constructor have prototype method
