@@ -9,3 +9,5 @@ Topics will be covering
 4. [**Deep & shallow**](./deep-shallow/README.md).
 4. [**Try & Catch**](./try-catch/README.md).
 4. [**Class**](./class/README.md).
+4. [**Equality Comparison**](./equality-comparison/README.md).
+
