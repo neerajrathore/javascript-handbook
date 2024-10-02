@@ -15,6 +15,7 @@ Topics covered so far. More to come soon
 11. [**Local and Session Storage**](./local-and-session-storage/README.md).
 12. [**Variable Scoping**](./variable-scoping/README.md).
 13. [**Array Methods**](./array-methods/README.md).
+14. [**Equality Comparison**](./equality-comparison/README.md).
 
 ## Hacktoberfest 2024 ✨
 
@@ -48,3 +49,4 @@ Many thanks to these amazing people :
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 Happy Contributing! 🚀
+
