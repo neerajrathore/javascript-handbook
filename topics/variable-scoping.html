@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="dynamic-title"></title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Variable Scoping in JavaScript</h3>
+          <p>Variable scoping determines the visibility and lifetime of variables in your code. In JavaScript, there are three main types of variable scopes: <strong>Global</strong>, <strong>Function</strong>, and <strong>Block</strong> scope. Understanding these scopes is essential for effective programming.</p>
+        
+          <h4>Types of Scopes</h4>
+        
+          <h5>1. Global Scope</h5>
+          <p>Variables declared outside any function or block are in the global scope and can be accessed from anywhere in the code.</p>
+          <pre class="code code--block">
+            <code>
+              var globalVar = 'I am a global variable';
+        
+              function displayGlobal() {
+                  console.log(globalVar);  // Accessible here
+              }
+        
+              displayGlobal();             // Outputs: I am a global variable
+              console.log(globalVar);      // Outputs: I am a global variable
+            </code>
+          </pre>
+        
+          <h5>2. Function Scope</h5>
+          <p>Variables declared within a function are in the function scope and can only be accessed within that function.</p>
+          <pre class="code code--block">
+            <code>
+              function myFunction() {
+                  var functionVar = 'I am a function-scoped variable';
+                  console.log(functionVar);  // Accessible here
+              }
+        
+              myFunction();  // Outputs: I am a function-scoped variable
+              console.log(functionVar);  // ReferenceError: functionVar is not defined
+            </code>
+          </pre>
+        
+          <h5>3. Block Scope</h5>
+          <p>Variables declared with <code>let</code> and <code>const</code> within a block (e.g., inside <code>{}</code>) are block-scoped and cannot be accessed outside that block.</p>
+          <pre class="code code--block">
+            <code>
+              if (true) {
+                  let blockVar = 'I am a block-scoped variable';
+                  console.log(blockVar);  // Accessible here
+              }
+        
+              console.log(blockVar);  // ReferenceError: blockVar is not defined
+            </code>
+          </pre>
+        
+          <h4>Conclusion</h4>
+          <p>Understanding variable scoping is crucial for managing the accessibility and lifetime of variables in your code. Properly utilizing scope helps prevent errors and enhances code maintainability.</p>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

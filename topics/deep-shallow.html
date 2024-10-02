@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="dynamic-title"></title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Deep and Shallow Copies in JavaScript</h3>
+          <p>In JavaScript, copying variables, objects, arrays, or classes can create either deep or shallow copies. Understanding the difference between these types of copies is essential to avoid unexpected behavior in your programs.</p>
+        
+          <h4>Deep and Shallow Copy Examples</h4>
+          <ul>
+            <li><a href="#variable"><strong>Variables</strong></a></li>
+            <li><a href="#object"><strong>Objects</strong></a></li>
+            <li><a href="#arrays"><strong>Arrays</strong></a></li>
+            <li><a href="#class"><strong>Classes</strong></a></li>
+          </ul>
+        
+          <h4 id="variable">1. Variables</h4>
+          <pre class="code code--block">
+            <code>
+              let a = 5;
+              let b = a; // b receives a copy of a's value
+              b = 7;
+              console.log(a, b); // 5, 7
+            </code>
+          </pre>
+          <p>Primitive types like numbers, strings, and booleans are copied by value, meaning changes to one variable do not affect the other.</p>
+        
+          <h4 id="object">2. Objects</h4>
+          <pre class="code code--block">
+            <code>
+              let eats = {
+                  type: "lunch",
+                  foods: {
+                      dinner: "roti"
+                  },
+                  drink: {
+                      liquid: "pani"
+                  }
+              }
+        
+              // Shallow copy
+              let someEats = eats;
+              someEats.type = "breakfast";
+              console.log(eats.type, someEats.type); // breakfast, breakfast (shallow copy)
+        
+              // Shallow copy using spread operator
+              let specialEats = {...eats};
+              specialEats.type = "breakfast";
+              console.log(eats.type, specialEats.type); // lunch, breakfast
+        
+              // Deep copy with nested objects
+              let deepEats = {...eats, foods: {...eats.foods}, drink: {...eats.drink}};
+              
+              // Deep copy using JSON methods
+              let deepEatsByJson = JSON.parse(JSON.stringify(eats));
+            </code>
+          </pre>
+          <p>Shallow copies only copy the top-level properties, so nested objects still refer to the same memory location. Deep copies, on the other hand, create a full copy of the object, including nested properties.</p>
+        
+          <h4 id="arrays">3. Arrays</h4>
+          <pre class="code code--block">
+            <code>
+              let num1 = [1, 2, 3];
+              let num2 = [...num1]; // Shallow copy
+              num2[2] = 5;
+              console.log(num1[2], num2[2]); // 2, 5
+              
+              // Another shallow copy method
+              let num3 = num1.map(el => el); // [1, 2, 3]
+            </code>
+          </pre>
+          <p>Like objects, arrays can be shallow copied using methods like the spread operator (<code>[...num1]</code>) or array methods like <code>map()</code>. Deep copying an array with nested objects or arrays will require more advanced techniques.</p>
+        
+          <h4 id="class">4. Classes</h4>
+          <pre class="code code--block">
+            <code>
+              class Counter {
+                  constructor() {
+                      this.count = 5;
+                  }
+                  copy() {
+                      const copy = new Counter();
+                      copy.count = this.count;
+                      return copy;
+                  }
+              }
+        
+              const originalCounter = new Counter();
+              const copiedCounter = originalCounter.copy();
+        
+              console.log(originalCounter.count); // 5
+              console.log(copiedCounter.count); // 5
+              copiedCounter.count = 7;
+              console.log(originalCounter.count); // 5
+              console.log(copiedCounter.count); // 7
+            </code>
+          </pre>
+          <p>When copying class instances, it’s essential to ensure that you are performing deep copies when necessary to avoid shared state between objects.</p>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

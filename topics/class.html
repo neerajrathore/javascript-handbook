@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="dynamic-title"></title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Classes in JavaScript</h3>
+          <p>In JavaScript, classes are a blueprint for creating objects. They encapsulate data and methods that define the behavior of the objects. Classes offer a more convenient syntax for creating objects compared to traditional constructor functions, although under the hood, classes are still functions.</p>
+        
+          <h4>Basic Class Example</h4>
+          <pre class="code code--block">
+            <code>
+              // Defining a simple Point class
+              class Point {
+                  constructor(x, y) {
+                      this.x = x;
+                      this.y = y;
+                      console.log("Constructor called:", this); // Point object
+                  }
+        
+                  toString() {
+                      return `(${this.x}, ${this.y})`;
+                  }
+              }
+        
+              let p = new Point(10, 20);
+              console.log(p.toString()); // (10, 20)
+              console.log(p instanceof Point); // true
+            </code>
+          </pre>
+          <p>The <code>Point</code> class defines a constructor that initializes an object's <code>x</code> and <code>y</code> properties and includes a method <code>toString</code> that returns a string representation of the point.</p>
+        
+          <h4>Class Inheritance Example</h4>
+          <pre class="code code--block">
+            <code>
+              // Extending the Point class to create a ColorPoint class
+              class ColorPoint extends Point {
+                  constructor(x, y, color) {
+                      super(x, y); // Calls the constructor of the parent class (Point)
+                      this.color = color;
+                      console.log("After super:", this); // ColorPoint object
+                  }
+        
+                  toString() {
+                      return `${super.toString()} in ${this.color}`;
+                  }
+              }
+        
+              const cp = new ColorPoint(25, 8, 'green');
+              console.log(cp.toString()); // (25, 8) in green
+              console.log(cp instanceof ColorPoint); // true
+              console.log(cp instanceof Point); // true
+            </code>
+          </pre>
+          <p>Here, the <code>ColorPoint</code> class extends the <code>Point</code> class using the <code>extends</code> keyword. The <code>super()</code> call in the constructor allows the child class to access the parent class's constructor and methods. The <code>ColorPoint</code> class overrides the <code>toString</code> method but can still access the parent's <code>toString</code> method using <code>super.toString()</code>.</p>
+        
+          <h4>Key Features of Classes</h4>
+          <ul>
+            <li>Classes provide a cleaner syntax for defining constructor functions.</li>
+            <li>They support inheritance through the <code>extends</code> keyword.</li>
+            <li>Methods defined in classes are not enumerable.</li>
+            <li>Inside a constructor, <code>super()</code> must be called before accessing <code>this</code> in a subclass.</li>
+            <li>Classes can be extended to create more specific types of objects using inheritance.</li>
+          </ul>
+        
+          <p>In this example, <code>cp</code> is both an instance of <code>ColorPoint</code> and <code>Point</code>, showing the power of inheritance in JavaScript classes.</p>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="dynamic-title"></title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Hoisting in JavaScript</h3>
+          <p>Hoisting is the process of moving variable and function declarations to the top of their scope before the code is executed. This behavior can affect how code runs and may lead to unexpected results if not understood properly.</p>
+        
+          <h4>Example 1: Hoisting with <code>var</code> for variable declaration</h4>
+          <p>When using <code>var</code>, the variable is hoisted and initialized with <code>undefined</code>, but its assignment is not hoisted.</p>
+          <pre class="code code--block">
+            <code>
+              console.log(number); // undefined, as the declaration is hoisted but not the assignment
+              var number = 10;
+              console.log(number); // 10
+            </code>
+          </pre>
+        
+          <h4>Example 2: Hoisting with <code>let</code> and <code>const</code> for variable declaration</h4>
+          <p>Variables declared with <code>let</code> or <code>const</code> are hoisted but not initialized, leading to a <code>ReferenceError</code> when accessed before declaration.</p>
+          <pre class="code code--block">
+            <code>
+              console.log(number); // ReferenceError: Cannot access 'number' before initialization
+              let number = 10;     // or const number = 10;
+              console.log(number);  // 10
+            </code>
+          </pre>
+          
+          <h4>Example 3: Temporal Dead Zone with <code>let</code> and <code>const</code></h4>
+          <p>The "Temporal Dead Zone" is the region where the variable is hoisted but cannot be accessed before its declaration. This applies to both <code>let</code> and <code>const</code>.</p>
+          <pre class="code code--block">
+            <code>
+              console.log(number); // ReferenceError: number is in the TDZ (Temporal Dead Zone)
+              let number = 10;
+              console.log(number);  // 10
+            </code>
+          </pre>
+        
+          <h4>Example 4: Undeclared Variables</h4>
+          <p>Undeclared variables do not exist until code assigns them a value. Assigning a value to an undeclared variable implicitly creates it as a global variable.</p>
+          <pre class="code code--block">
+            <code>
+              function hoist() {
+                a = 20; // Implicit global variable
+                var b = 5; // Local variable
+              }
+        
+              hoist();
+        
+              console.log(a); // 20, global variable
+              console.log(b); // ReferenceError: b is not defined
+            </code>
+          </pre>
+          
+          <p><strong>Note:</strong> While variables declared with <code>var</code> can be accessed before initialization (due to hoisting), variables declared with <code>let</code> and <code>const</code> cannot be accessed before initialization, making them safer to use to avoid unintended bugs.</p>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

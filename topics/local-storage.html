@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="dynamic-title"></title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Local Storage and Session Storage</h3>
+          <p>This document provides an overview of Local Storage and Session Storage in web development. Both are part of the Web Storage API, which allows web applications to store data in the user's browser.</p>
+        
+          <h4>Local Storage</h4>
+        
+          <h5>Definition</h5>
+          <p>Local Storage is a web storage mechanism that allows you to store data in key/value pairs in a web browser with no expiration time. Data stored in Local Storage persists even after the browser is closed and reopened.</p>
+        
+          <h5>Key Features</h5>
+          <ul>
+            <li><strong>Capacity</strong>: Typically allows storage of up to 5-10 MB of data.</li>
+            <li><strong>Persistence</strong>: Data remains even when the browser is closed.</li>
+            <li><strong>Scope</strong>: Data is accessible only to the origin (protocol + domain + port) that created it.</li>
+          </ul>
+        
+          <h5>Use Cases</h5>
+          <ul>
+            <li>Storing user preferences or settings.</li>
+            <li>Caching data for offline use.</li>
+            <li>Keeping track of user activity.</li>
+          </ul>
+        
+          <h5>Example Usage</h5>
+          <pre class="code code--block">
+            <code>
+              // Set item
+              localStorage.setItem('key', 'value');
+        
+              // Get item
+              const value = localStorage.getItem('key');
+        
+              // Remove item
+              localStorage.removeItem('key');
+        
+              // Clear all items
+              localStorage.clear();
+            </code>
+          </pre>
+        
+          <h4>Session Storage</h4>
+        
+          <h5>Definition</h5>
+          <p>Session Storage is a web storage mechanism that allows you to store data in key/value pairs in a web browser. Unlike Local Storage, data stored in Session Storage is cleared when the page session ends.</p>
+        
+          <h5>Key Features</h5>
+          <ul>
+            <li><strong>Capacity</strong>: Similar to Local Storage, usually around 5-10 MB.</li>
+            <li><strong>Persistence</strong>: Data is available only for the duration of the page session.</li>
+            <li><strong>Scope</strong>: Data is accessible only to the origin that created it and is available within the same tab.</li>
+          </ul>
+        
+          <h5>Use Cases</h5>
+          <ul>
+            <li>Storing temporary data for a single session.</li>
+            <li>Keeping track of user input in forms across page refreshes.</li>
+            <li>Managing user session information.</li>
+          </ul>
+        
+          <h5>Example Usage</h5>
+          <pre class="code code--block">
+            <code>
+              // Set item
+              sessionStorage.setItem('key', 'value');
+        
+              // Get item
+              const value = sessionStorage.getItem('key');
+        
+              // Remove item
+              sessionStorage.removeItem('key');
+        
+              // Clear all items
+              sessionStorage.clear();
+            </code>
+          </pre>
+        
+          <h4>Conclusion</h4>
+          <p>Local Storage and Session Storage are powerful tools for web developers, allowing for efficient data storage in the user's browser. Understanding the differences between the two can help you choose the right storage mechanism for your application needs.</p>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

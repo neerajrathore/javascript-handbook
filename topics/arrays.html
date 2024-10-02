@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="dynamic-title"></title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">JavaScript Arrays</h3>
+          <p>Arrays in JavaScript are a collection of elements, which can be of any type, including numbers, strings, objects, or even other arrays. They are ordered, mutable, and provide numerous built-in methods to manipulate and interact with the data. Here we will discuss the various methods that can be used with JavaScript arrays.</p>
+        
+          <h4>Creating Arrays</h4>
+          <p>You can create an array using the array literal notation or the <code>Array</code> constructor.</p>
+        
+          <pre class="code code--block">
+            <code>
+              // Using array literal notation
+              const fruits = ['apple', 'banana', 'cherry'];
+        
+              // Using the Array constructor
+              const numbers = new Array(1, 2, 3, 4, 5);
+            </code>
+          </pre>
+        
+          <h4>forEach()</h4>
+          <p>The <code>forEach()</code> method in JavaScript is used to execute a provided function once for each array element. It allows us to iterate over the elements of an array and perform operations on each element without creating a new array.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const fruits = ['apple', 'banana', 'cherry'];
+        
+              // Using forEach to log each fruit to the console
+              fruits.forEach((fruit, index) => {
+                  console.log(`Fruit ${index + 1}: ${fruit}`);
+              });
+            </code>
+          </pre>
+        
+          <h4>concat()</h4>
+          <p>The <code>concat()</code> method is used to merge two or more arrays into a new array. This method does not change the existing arrays but instead returns a new array that combines the elements of the provided arrays.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const fruits1 = ['apple', 'banana'];
+              const fruits2 = ['cherry', 'date'];
+              const fruits3 = ['fig', 'grape'];
+        
+              // Concatenating
+              const allFruits = fruits1.concat(fruits2, fruits3);
+        
+              console.log(allFruits);
+            </code>
+          </pre>
+        
+          <h4>find()</h4>
+          <p>The <code>find()</code> method is used to search through an array and return the value of the first element that satisfies a provided testing function. If no elements satisfy the testing function, <code>undefined</code> is returned.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const numbers = [4, 9, 16, 25];
+        
+              // Using find to locate the first number greater than 10
+              const found = numbers.find(num => num > 10);
+        
+              console.log(found);
+            </code>
+          </pre>
+        
+          <h4>findIndex()</h4>
+          <p>The <code>findIndex()</code> method returns the index of the first element in the array that satisfies the provided testing function. If no elements satisfy the testing function, <code>-1</code> is returned.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const numbers = [4, 9, 16, 25];
+        
+              // Using findIndex to locate the index of the first number greater than 10
+              const index = numbers.findIndex(num => num > 10);
+        
+              console.log(index);
+            </code>
+          </pre>
+        
+          <h4>indexOf()</h4>
+          <p>The <code>indexOf()</code> method returns the first index at which a given element can be found in the array. If the element is not present, <code>-1</code> is returned.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const fruits = ['apple', 'banana', 'cherry', 'banana'];
+        
+              // Using indexOf to find the index of 'banana'
+              const index = fruits.indexOf('banana');
+        
+              console.log(index);
+            </code>
+          </pre>
+        
+          <h4>lastIndexOf()</h4>
+          <p>The <code>lastIndexOf()</code> method returns the last index at which a given element can be found in the array. If the element is not present, <code>-1</code> is returned.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const fruits = ['apple', 'banana', 'cherry', 'banana'];
+        
+              // Using lastIndexOf to find the last index of 'banana'
+              const index = fruits.lastIndexOf('banana');
+        
+              console.log(index);
+            </code>
+          </pre>
+        
+          <h4>some()</h4>
+          <p>The <code>some()</code> method tests whether at least one element in the array passes the test implemented by the provided callback function. It returns <code>true</code> if it finds an element that satisfies the condition; otherwise, it returns <code>false</code>.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const numbers = [1, 2, 3, 4, 5];
+        
+              // Using some to check if there are any numbers greater than 3
+              const hasGreaterThanThree = numbers.some(num => num > 3);
+        
+              console.log(hasGreaterThanThree);
+            </code>
+          </pre>
+        
+          <h4>every()</h4>
+          <p>The <code>every()</code> method tests whether all elements in the array pass the test implemented by the provided callback function. It returns <code>true</code> if all elements satisfy the condition; otherwise, it returns <code>false</code>.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const numbers = [2, 4, 6, 8, 10];
+        
+              // Using every to check if all numbers are even
+              const allEven = numbers.every(num => num % 2 === 0);
+        
+              console.log(allEven);
+            </code>
+          </pre>
+        
+          <h4>includes()</h4>
+          <p>The <code>includes()</code> method checks whether an array contains a specified element, returning <code>true</code> or <code>false</code> as appropriate.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const fruits = ['apple', 'banana', 'cherry'];
+        
+              // Checking if 'banana' is in the array
+              const hasBanana = fruits.includes('banana');
+        
+              console.log(hasBanana);
+            </code>
+          </pre>
+        
+          <h4>push()</h4>
+          <p>The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const numbers = [1, 2, 3];
+        
+              // Using push to add 4 and 5
+              const newLength = numbers.push(4, 5);
+        
+              console.log(numbers);
+              console.log(newLength);
+            </code>
+          </pre>
+        
+          <h4>unshift()</h4>
+          <p>The <code>unshift()</code> method adds one or more elements to the beginning of an array and returns the new length of the array.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const numbers = [3, 4, 5];
+        
+              // Using unshift to add 1 and 2 to the beginning of the array
+              const newLength = numbers.unshift(1, 2);
+        
+              console.log(numbers);
+              console.log(newLength);
+            </code>
+          </pre>
+        
+          <h4>pop()</h4>
+          <p>The <code>pop()</code> method removes the last element from an array and returns that element.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const fruits = ['apple', 'banana', 'cherry'];
+        
+              // Using pop to remove the last element
+              const removedFruit = fruits.pop();
+        
+              console.log(removedFruit);
+              console.log(fruits);
+            </code>
+          </pre>
+        
+          <h4>shift()</h4>
+          <p>The <code>shift()</code> method removes the first element from an array and returns that element.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const fruits = ['apple', 'banana', 'cherry'];
+        
+              // Using shift to remove the first element
+              const removedFruit = fruits.shift();
+        
+              console.log(removedFruit);
+              console.log(fruits);
+            </code>
+          </pre>
+        
+          <h4>toString()</h4>
+          <p>The <code>toString()</code> method converts an array into a string representation, with elements separated by commas.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const fruits = ['apple', 'banana', 'cherry'];
+        
+              // Using toString to convert the array to a string
+              const fruitString = fruits.toString();
+        
+              console.log(fruitString);
+            </code>
+          </pre>
+        
+          <h4>join()</h4>
+          <p>The <code>join()</code> method concatenates all elements of an array into a string, with a specified separator between each element.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const fruits = ['apple', 'banana', 'cherry'];
+        
+              // Using join to convert the array to a string with a hyphen separator
+              const fruitStringWithHyphen = fruits.join('-');
+        
+              console.log(fruitStringWithHyphen);
+            </code>
+          </pre>
+        
+          <h4>slice()</h4>
+          <p>The <code>slice()</code> method returns a shallow copy of a portion of an array into a new array object. The original array is not modified.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const fruits = ['apple', 'banana', 'cherry', 'date'];
+        
+              // Using slice to create a new array from index 1 to 3 (exclusive)
+              const slicedFruits = fruits.slice(1, 3);
+        
+              console.log(slicedFruits);
+              console.log(fruits);
+            </code>
+          </pre>
+        
+          <h4>splice()</h4>
+          <p>The <code>splice()</code> method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. The method modifies the original array.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const fruits = ['apple', 'banana', 'cherry', 'date'];
+        
+              // Using splice to remove 2 elements starting from index 1
+              const removedFruits = fruits.splice(1, 2);
+        
+              console.log(removedFruits);
+              console.log(fruits);
+            </code>
+          </pre>
+        
+          <h4>reverse()</h4>
+          <p>The <code>reverse()</code> method reverses the order of the elements in an array in place, modifying the original array.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const numbers = [1, 2, 3, 4, 5];
+        
+              // Reversing the numeric array
+              numbers.reverse();
+        
+              console.log(numbers);
+            </code>
+          </pre>
+        
+          <h4>flat()</h4>
+          <p>The <code>flat()</code> method creates a new array with all sub-array elements concatenated into it recursively up to a specified depth.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const nestedArray = [1, 2, [3, 4]];
+        
+              // Flattening the array by one level
+              const flatArray = nestedArray.flat();
+        
+              console.log(flatArray);
+            </code>
+          </pre>
+        
+          <h4>flatMap()</h4>
+          <p>The <code>flatMap()</code> method first maps each element using a mapping function, then flattens the result into a new array.</p>
+        
+          <pre class="code code--block">
+            <code>
+              const numbers = [1, 2, 3];
+        
+              // Using flatMap to square each number and flatten the result
+              const result = numbers.flatMap(num => [num, num * num]);
+        
+              console.log(result);
+            </code>
+          </pre>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

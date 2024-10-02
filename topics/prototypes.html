@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="dynamic-title"></title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Prototypes in JavaScript</h3>
+          <p>JavaScript is a prototype-based language, which means every object has a built-in property called a <strong>prototype</strong>. This property allows objects to inherit properties and methods from other objects, facilitating a form of inheritance in JavaScript.</p>
+          
+          <h4>Key Points about Prototypes</h4>
+          <ul>
+            <li><strong>Prototype</strong> is used to inherit properties and methods from one object to another.</li>
+            <li>When accessing a property or method on an object, JavaScript first checks the object itself, and if it’s not found, it looks at the object’s prototype, and then up the prototype chain until it reaches <code>null</code>.</li>
+            <li>The <code>prototype</code> object is essentially a blueprint for other objects, allowing them to share behaviors (methods) without duplicating code.</li>
+          </ul>
+        
+          <h4>Ways to Use Prototypes in JavaScript</h4>
+          <p>JavaScript uses prototypes in several different ways:</p>
+          <ul>
+            <li><a href="./object-prototype/README.md"><strong>Object Prototype</strong></a></li>
+            <li><a href="./function-prototype/README.md"><strong>Function Prototype</strong></a></li>
+            <li><a href="./constructor-prototype/README.md"><strong>Constructor Prototype</strong></a></li>
+            <li><a href="./class-prototype/README.md"><strong>Class Prototype</strong></a></li>
+          </ul>
+        
+          <h4>Prototype Chain Example</h4>
+          <p>Here’s an example of how JavaScript's prototype chain works:</p>
+          <pre class="code code--block">
+            <code>
+              function Person(name) {
+                  this.name = name;
+              }
+        
+              Person.prototype.greet = function() {
+                  console.log("Hello, " + this.name);
+              }
+        
+              let person1 = new Person("Alice");
+              person1.greet(); // Output: Hello, Alice
+        
+              // The 'greet' method is not defined on 'person1' itself, but it's found in Person's prototype.
+            </code>
+          </pre>
+        
+          <p>This demonstrates how JavaScript looks up the prototype chain to find methods or properties that aren’t directly on the object.</p>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

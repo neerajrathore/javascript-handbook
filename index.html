@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>YockerFX</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="css/style-global.css">
+      <link rel="stylesheet" href="css/style-landing.css">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="doc.html" class="link link--dark"><i class="fa fa-book"></i> Documentation</a></li>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">Javascript Handbook</h1>
+      <p class="hero__description">let's learn something</p>
+    </div>
+    <div class="hero__terminal"> 
+      <pre>
+        <code class="shell-session demo">
+        </code>
+      </pre>
+    </div>
+    <div class="wrapper">
+      <div class="feature">
+        <div class="feature__item">
+          <h3 class="section__title">Structured Overview</h3>
+          <p>The handbook provides a well-organized approach to learning JavaScript. It covers various topics from basic to advanced concepts, which is useful for both beginners and more experienced developers.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Code Examples</h3>
+          <p>One of the major benefits is the inclusion of code snippets that can be directly tested in the browser. This makes the learning process interactive, encouraging users to experiment with the code themselves.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Practical Focus</h3>
+          <p>The content is geared toward practical use cases and common topics in everyday JavaScript development. This helps learners not only gain theoretical knowledge but also understand how to apply it in real-world projects.</p>
+        </div>
+      </div>
+      <div class="callout">
+        <p>Read our documentation for advanced Javascript learning!</p>
+        <a href="doc.html" class="button--primary">Documentation</a>
+      </div>
+    </div>
+    <div class="changelog">
+      <div class="wrapper">
+        <h3 class="section__title">Changelog</h3>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v1.0</h4>
+            <small class="changelog__date">10/02/2024</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Converted Markdownfiles to HTML, CSS & JS</li>
+              <li>Reworked Design</li>
+              <li>Added Dukomentation</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <button class="changelog__callout button--primary" onclick="toggleChangelog()">Show Latest Changelog</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
