@@ -14,6 +14,7 @@ Topics covered so far. More to come soon
 10. [**Event listener**](./Event%20Listeners/README.md).
 11. [**Local and session storage**](./Local%20and%20session%20storage/README.md).
 12. [**variable scoping**](./variable%20scoping/README.md).
+13. [**Array Methods**](./Array%20Methods/README.md).
 
 ## Hacktoberfest 2024 ✨
 
