@@ -50,3 +50,15 @@ Many thanks to these amazing people :
 
 Happy Contributing! 🚀
 
+## Contact
+For questions or feedback, please reach out to me at [neerajrathore](mailto:neerajrathore@gmail.com).
+
+## Project Status
+This project is currently in development. Contributions are welcome!
+
+## Connect with Us 🌐
+
+[![GitHub](https://img.icons8.com/ios-filled/50/000000/github.png)](https://github.com/neerajrathore)
+[![Twitter](https://img.icons8.com/ios-filled/50/000000/twitter.png)](https://twitter.com)
+[![LinkedIn](https://img.icons8.com/ios-filled/50/000000/linkedin.png)](https://www.linkedin.com/)
+[![Facebook](https://img.icons8.com/ios-filled/50/000000/facebook.png)](https://facebook.com)
