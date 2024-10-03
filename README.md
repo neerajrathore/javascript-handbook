@@ -41,6 +41,7 @@ Many thanks to these amazing people :
       <td align="center" valign="top" width="25%"><a href="https://github.com/Bharath-KumarReddy"><img src="https://avatars.githubusercontent.com/u/127650446?v=4" width="100px;"/><br /><sub><b>Bharath-KumarReddy</b></sub></a><br /></td>
       <td align="center" valign="top" width="25%"><a href="https://github.com/DhanushNehru"><img src="https://avatars.githubusercontent.com/u/22955675?v=4" width="100px;"/><br /><sub><b>Dhanush</b></sub></a><br /></td>
       <td align="center" valign="top" width="25%"><a href="https://github.com/suryanshsingh2001"><img src="https://avatars.githubusercontent.com/u/80690023?v=4" width="100px;"/><br /><sub><b>Suryansh Singh</b></sub></a><br /></td>
+            <td align="center" valign="top" width="25%"><a href="https://github.com/yockerfx"><img src="https://avatars.githubusercontent.com/u/61665083?v=4" width="100px;"/><br /><sub><b>Suryansh Singh</b></sub></a><br /></td>
     </tr>
   </tbody>
 </table>
