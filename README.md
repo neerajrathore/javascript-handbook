@@ -32,7 +32,7 @@ We welcome contributions from the open-source community, by adding of new javasc
 
 ### Share on Social Media:
 <a href="https://twitter.com/intent/tweet?url=https://neerajrathore.github.io/javascript-handbook/&text=Check%20out%20this%20JavaScript%20Handbook!%20#JavaScript" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="ashish_ash07" height="30" width="40" /></a>
-<a href="https://twitter.com/intent/tweet?url=https://neerajrathore.github.io/javascript-handbook/&text=Check%20out%20this%20JavaScript%20Handbook!%20#JavaScript" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="ashish_ash07" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/shareArticle?url=https://neerajrathore.github.io/javascript-handbook/&title=JavaScript%20Handbook" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="ashish_ash07" height="30" width="40" /></a>
 <a href="https://www.facebook.com/sharer/sharer.php?u=https://neerajrathore.github.io/javascript-handbook/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="ashish_ash07" height="30" width="40" /></a>
 
 To copy the link manually, here is the URL:  
