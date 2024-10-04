@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="dynamic-title"></title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Async JavaScript</h3>
+          <p>JavaScript is single-threaded, meaning it can only do one thing at a time. However, with asynchronous programming, JavaScript can perform non-blocking operations, allowing other code to run while waiting for long-running tasks to complete. Below are examples and detailed explanations of different async patterns in JavaScript.</p>
+        
+          <h4>1. Synchronous vs Asynchronous Execution</h4>
+          <p>Synchronous code executes line by line, meaning each line waits for the previous one to finish before executing. Asynchronous code, however, allows certain tasks (like network requests) to happen in the background without blocking the execution of other code.</p>
+          <pre class="code code--block">
+            <code>
+              console.log("Start");
+        
+              setTimeout(() => {
+                  console.log("Async Operation");
+              }, 2000);  // This executes after 2 seconds
+        
+              console.log("End");
+            </code>
+          </pre>
+          <p><strong>Explanation</strong>: "Start" is logged first, "End" is logged immediately after, and "Async Operation" is logged after 2 seconds due to the asynchronous <code>setTimeout</code>.</p>
+        
+          <h4>2. Callbacks</h4>
+          <p>A callback function is a function passed as an argument to another function and is executed once the asynchronous operation completes.</p>
+          <pre class="code code--block">
+            <code>
+              function fetchData(callback) {
+                  setTimeout(() => {
+                      console.log("Data fetched");
+                      callback();  // Callback executed after async operation
+                  }, 2000);
+              }
+        
+              function processData() {
+                  console.log("Processing data");
+              }
+        
+              fetchData(processData);
+            </code>
+          </pre>
+          <p><strong>Explanation</strong>: The <code>fetchData</code> function simulates an async operation and uses a callback (<code>processData</code>) to process the data once it’s fetched.</p>
+        
+          <h4>3. Promises</h4>
+          <p>Promises provide a cleaner way to handle asynchronous operations. A promise represents a value that may be available now, or in the future, or never.</p>
+          <pre class="code code--block">
+            <code>
+              let fetchData = new Promise((resolve, reject) => {
+                  setTimeout(() => {
+                      let success = true;
+                      if (success) {
+                          resolve("Data fetched successfully");
+                      } else {
+                          reject("Data fetching failed");
+                      }
+                  }, 2000);
+              });
+        
+              fetchData
+                  .then((message) => {
+                      console.log(message);  // Logs if the promise is resolved
+                  })
+                  .catch((error) => {
+                      console.log(error);  // Logs if the promise is rejected
+                  });
+            </code>
+          </pre>
+          <p><strong>Explanation</strong>: Promises handle success with <code>resolve</code> and failure with <code>reject</code>, and are handled using <code>.then()</code> and <code>.catch()</code>.</p>
+        
+          <h4>4. Async/Await</h4>
+          <p><code>async/await</code> provides a cleaner way to handle promises. <code>await</code> pauses the execution of an async function until the promise is resolved or rejected.</p>
+          <pre class="code code--block">
+            <code>
+              async function fetchData() {
+                  try {
+                      let promise = new Promise((resolve, reject) => {
+                          setTimeout(() => resolve("Data fetched"), 2000);
+                      });
+                      let result = await promise;  // Pauses until the promise is resolved
+                      console.log(result);  // Logs "Data fetched"
+                  } catch (error) {
+                      console.log(error);  // Handles rejection
+                  }
+              }
+        
+              fetchData();
+            </code>
+          </pre>
+          <p><strong>Explanation</strong>: The <code>async</code> keyword makes a function asynchronous, and <code>await</code> pauses the execution until the promise is resolved.</p>
+        
+          <h4>5. Example Breakdown</h4>
+          <p>Here are examples of callbacks, promises, and async/await for handling asynchronous operations:</p>
+        
+          <h5>Callback Example</h5>
+          <pre class="code code--block">
+            <code>
+              function getUserData(callback) {
+                  setTimeout(() => {
+                      callback("User data fetched");
+                  }, 2000);
+              }
+        
+              getUserData((data) => {
+                  console.log(data);  // Logs "User data fetched"
+              });
+            </code>
+          </pre>
+        
+          <h5>Promise Example</h5>
+          <pre class="code code--block">
+            <code>
+              function getUserData() {
+                  return new Promise((resolve, reject) => {
+                      setTimeout(() => {
+                          resolve("User data fetched via Promise");
+                      }, 2000);
+                  });
+              }
+        
+              getUserData().then((data) => {
+                  console.log(data);  // Logs "User data fetched via Promise"
+              });
+            </code>
+          </pre>
+        
+          <h5>Async/Await Example</h5>
+          <pre class="code code--block">
+            <code>
+              async function getUserData() {
+                  let data = await new Promise((resolve) => {
+                      setTimeout(() => resolve("User data fetched via Async/Await"), 2000);
+                  });
+                  console.log(data);  // Logs "User data fetched via Async/Await"
+              }
+        
+              getUserData();
+            </code>
+          </pre>
+        
+          <h4>6. Key Differences</h4>
+          <ul>
+            <li><strong>Callbacks</strong>: Can lead to "callback hell" when nesting multiple async operations.</li>
+            <li><strong>Promises</strong>: Provide better readability but chaining many <code>.then()</code> can still lead to complexity.</li>
+            <li><strong>Async/Await</strong>: The cleanest and most maintainable approach to writing asynchronous code.</li>
+          </ul>
+        
+          <h4>7. Best Practice</h4>
+          <p>It’s recommended to use <code>async/await</code> for handling asynchronous code due to its readability. However, promises are still useful for handling multiple asynchronous operations simultaneously, such as using <code>Promise.all()</code>.</p>
+          <pre class="code code--block">
+            <code>
+              async function fetchAllData() {
+                  let promise1 = new Promise((resolve) => setTimeout(() => resolve("Data 1 fetched"), 1000));
+                  let promise2 = new Promise((resolve) => setTimeout(() => resolve("Data 2 fetched"), 2000));
+        
+                  let [data1, data2] = await Promise.all([promise1, promise2]);
+        
+                  console.log(data1);  // Logs "Data 1 fetched"
+                  console.log(data2);  // Logs "Data 2 fetched"
+              }
+        
+              fetchAllData();
+            </code>
+          </pre>
+          <p><strong>Explanation</strong>: <code>Promise.all()</code> waits for all promises to resolve before continuing. This is useful for parallel operations.</p>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

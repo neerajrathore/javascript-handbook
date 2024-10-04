@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="dynamic-title"></title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Event Listeners in JavaScript</h3>
+          <p>Event listeners are a fundamental part of web development in JavaScript, allowing developers to create interactive web applications. An event listener is a procedure in JavaScript that waits for an event to occur and executes a specified function when that event occurs. Understanding event listeners and how to use them effectively is crucial for enhancing user experiences and creating dynamic web pages.</p>
+        
+          <h4>What is an Event?</h4>
+          <p>An event is an action or occurrence that can be detected by the browser. Common types of events include:</p>
+          <ul>
+            <li><strong>Mouse events</strong>:
+              <ul>
+                <li><code>'click'</code>: Triggered when an element is clicked.</li>
+                <li><code>'dblclick'</code>: Triggered when an element is double-clicked.</li>
+                <li><code>'mouseover'</code>: Triggered when the mouse pointer moves over an element.</li>
+                <li><code>'mouseout'</code>: Triggered when the mouse pointer leaves an element.</li>
+              </ul>
+            </li>
+            <li><strong>Keyboard events</strong>:
+              <ul>
+                <li><code>'keydown'</code>: Triggered when a key is pressed down.</li>
+                <li><code>'keyup'</code>: Triggered when a key is released.</li>
+                <li><code>'keypress'</code>: Triggered when a key is pressed and held.</li>
+              </ul>
+            </li>
+            <li><strong>Form events</strong>:
+              <ul>
+                <li><code>'submit'</code>: Triggered when a form is submitted.</li>
+                <li><code>'change'</code>: Triggered when the value of an input changes.</li>
+                <li><code>'input'</code>: Triggered when the value of an input element is modified.</li>
+              </ul>
+            </li>
+            <li><strong>Window events</strong>:
+              <ul>
+                <li><code>'load'</code>: Triggered when the page has fully loaded.</li>
+                <li><code>'resize'</code>: Triggered when the window is resized.</li>
+                <li><code>'scroll'</code>: Triggered when the user scrolls.</li>
+              </ul>
+            </li>
+            <li><strong>Touch events</strong>:
+              <ul>
+                <li><code>'touchstart'</code>: Triggered when a touch point is placed on the touch surface.</li>
+                <li><code>'touchend'</code>: Triggered when a touch point is removed from the touch surface.</li>
+                <li><code>'touchmove'</code>: Triggered when a touch point is moved along the touch surface.</li>
+              </ul>
+            </li>
+          </ul>
+        
+          <h4>Adding Event Listeners</h4>
+          <p>Event listeners can be added to HTML elements using the <code>addEventListener</code> method. This method is part of the DOM (Document Object Model) and allows multiple event listeners to be attached to the same element.</p>
+        
+          <h5>Syntax</h5>
+          <pre class="code code--block">
+            <code>
+              element.addEventListener(event, function, useCapture);
+            </code>
+          </pre>
+          <p><strong>Parameters</strong>:</p>
+          <ul>
+            <li><code>event</code>: A string representing the event type (e.g., <code>'click'</code>, <code>'keydown'</code>).</li>
+            <li><code>function</code>: The function to execute when the event is triggered, which can be either:
+              <ul>
+                <li><strong>An anonymous function</strong>:
+                  <pre class="code code--block">
+                    <code>
+                      element.addEventListener('click', function() {
+                        // Code to execute on click
+                      });
+                    </code>
+                  </pre>
+                </li>
+                <li><strong>A named function</strong>:
+                  <pre class="code code--block">
+                    <code>
+                      function handleClick() {
+                        // Code to execute on click
+                      }
+                      element.addEventListener('click', handleClick);
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+            <li><code>useCapture</code>: An optional boolean indicating whether to use event capturing or bubbling. The default value is <code>false</code>, meaning the event uses bubbling. If set to <code>true</code>, the event listener will be triggered during the capturing phase.
+              <pre class="code code--block">
+                <code>
+                  element.addEventListener('click', handleClick, true);  // Capturing phase
+                </code>
+              </pre>
+            </li>
+          </ul>
+        
+          <h4>Example: Adding a Click Event Listener</h4>
+          <pre class="code code--block">
+            <code>
+              <!DOCTYPE html>
+              <html lang="en">
+              <head>
+                <meta charset="UTF-8">
+                <title>Event Listener Example</title>
+              </head>
+              <body>
+                <button id="myButton">Click Me!</button>
+        
+                <script>
+                  const button = document.getElementById('myButton');
+        
+                  button.addEventListener('click', function() {
+                    alert('Button was clicked!');
+                  });
+                </script>
+              </body>
+              </html>
+            </code>
+          </pre>
+        
+          <h4>Removing an Event Listener</h4>
+          <p>You can remove an event listener using the <code>removeEventListener</code> method, provided you reference the same function that was used to add it.</p>
+          <pre class="code code--block">
+            <code>
+              function handleClick() {
+                alert('Button was clicked!');
+              }
+        
+              button.addEventListener('click', handleClick);
+        
+              // Later in the code, you can remove the listener
+              button.removeEventListener('click', handleClick);
+            </code>
+          </pre>
+        
+          <h4>Event Propagation</h4>
+          <p>When an event occurs, it follows a path known as the event propagation path. This includes two phases:</p>
+          <ul>
+            <li><strong>Capturing Phase</strong>: The event starts from the top of the DOM and travels down to the target element.</li>
+            <li><strong>Bubbling Phase</strong>: The event bubbles back up from the target element to the top of the DOM.</li>
+          </ul>
+        
+          <h5>Example: Understanding Event Propagation</h5>
+          <pre class="code code--block">
+            <code>
+              <!DOCTYPE html>
+              <html lang="en">
+              <head>
+                <meta charset="UTF-8">
+                <title>Event Propagation Example</title>
+              </head>
+              <body>
+                <div id="outer" style="padding: 50px; background-color: lightblue;">
+                  Outer Div
+                  <div id="inner" style="padding: 50px; background-color: lightcoral;">
+                    Inner Div
+                  </div>
+                </div>
+        
+                <script>
+                  document.getElementById('outer').addEventListener('click', function() {
+                    alert('Outer div clicked!');
+                  }, false);  // Bubbling phase
+        
+                  document.getElementById('inner').addEventListener('click', function(event) {
+                    alert('Inner div clicked!');
+                    event.stopPropagation();  // Stops the event from bubbling up to the outer div
+                  });
+                </script>
+              </body>
+              </html>
+            </code>
+          </pre>
+        
+          <h4>The Event Object</h4>
+          <p>When an event occurs, an event object is created and passed to the event handler. This object contains information about the event, including the type of event, the target element, and additional properties specific to the event.</p>
+        
+          <h5>Accessing the Event Object</h5>
+          <pre class="code code--block">
+            <code>
+              button.addEventListener('click', function(event) {
+                console.log(event.target);  // Logs the button element
+                console.log(event.type);    // Logs the type of event (e.g., 'click')
+                console.log(event.clientX, event.clientY);  // Logs the mouse position when clicked
+              });
+            </code>
+          </pre>
+        
+          <h5>Common Properties of the Event Object</h5>
+          <ul>
+            <li><strong>type</strong>: The type of event (e.g., 'click', 'keypress').</li>
+            <li><strong>target</strong>: The element that triggered the event.</li>
+            <li><strong>currentTarget</strong>: The element to which the event handler is attached.</li>
+            <li><strong>preventDefault()</strong>: Prevents the default behavior associated with the event (e.g., preventing a form submission).</li>
+          </ul>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="dynamic-title"></title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Error Handling with Try-Catch in JavaScript</h3>
+          <p>In JavaScript, the <code>try...catch</code> statement allows you to handle errors that may occur during the execution of your code. The code in the <code>try</code> block is executed first, and if an error occurs, control is passed to the <code>catch</code> block. However, <code>try...catch</code> can't catch errors in asynchronous code directly because it is synchronous.</p>
+        
+          <h4>Basic Example of Try-Catch</h4>
+          <pre class="code code--block">
+            <code>
+              function checkNumber(number) {
+                if (isNaN(number) || number < 0) {
+                  return new Error("Not a valid number");
+                } else {
+                  return true;
+                }
+              }
+        
+              window.addEventListener("load", function () {
+                const inputtedNumber = parseInt(window.prompt("Enter a number to verify"));
+        
+                try {
+                  const isNumberValid = checkNumber(inputtedNumber);
+        
+                  if (isNumberValid instanceof Error) {
+                    console.error(isNumberValid.message);
+                    throw RangeError("Not a valid number!");
+                  } else {
+                    console.log("Try block executed successfully.");
+                  }
+                } catch (error) {
+                  console.error(error, "Error caught in catch block.");
+                }
+        
+                console.log("Execution continues after try-catch.");
+              });
+            </code>
+          </pre>
+          <p>In this example, an error is thrown if the number is invalid. The <code>catch</code> block handles the error gracefully.</p>
+        
+          <h4>Asynchronous Code and Try-Catch</h4>
+          <p>Since <code>try...catch</code> is synchronous, it doesn't catch errors in asynchronous code (like <code>setTimeout</code> or promises) unless explicitly handled.</p>
+        
+          <h5>Example of Asynchronous Code</h5>
+          <pre class="code code--block">
+            <code>
+              // This will not catch the error because setTimeout is asynchronous
+              try {
+                setTimeout(() => {
+                  throw new Error("Error occurred");
+                }, 2000);
+              } catch (err) {
+                console.log("This will not catch the error");
+              }
+        
+              // Solution: Handle errors in asynchronous code using Promises
+              new Promise((resolve, reject) => {
+                setTimeout(() => {
+                  try {
+                    throw new Error('Error in async code');
+                  } catch (err) {
+                    reject(err);
+                  }
+                }, 200);
+              })
+              .catch((err) => {
+                console.error("Caught asynchronous error:", err);
+              });
+            </code>
+          </pre>
+          <p>Here, the error inside <code>setTimeout</code> is caught using a promise, ensuring the asynchronous error is handled correctly.</p>
+        
+          <h4>Error Handling with Promises</h4>
+          <p>When working with promises, errors can be handled using <code>catch</code> on the promise chain. If an error is thrown inside a promise, it will be rejected and the <code>catch</code> block will be executed.</p>
+        
+          <h5>Example of Promises with Try-Catch</h5>
+          <pre class="code code--block">
+            <code>
+              // Example using promises
+              Promise.resolve()
+                .then(() => {
+                  throw new Error('Error in promise');
+                })
+                .catch((err) => {
+                  console.error("Caught error in promise:", err);
+                });
+        
+              // Example using async/await
+              async function handleError() {
+                try {
+                  await Promise.resolve().then(() => {
+                    throw new Error('Error in async function');
+                  });
+                } catch (err) {
+                  console.error("Caught error in async/await:", err);
+                }
+              }
+        
+              handleError();
+            </code>
+          </pre>
+          <p>With async/await, thrown errors are converted to promise rejections, and you can handle them using <code>try...catch</code>.</p>
+        
+          <h4>Async Function Error Handling</h4>
+          <p>Async functions return a promise, and any errors inside an async function are caught in a <code>catch</code> block of the promise chain.</p>
+        
+          <pre class="code code--block">
+            <code>
+              async function errorTest() {
+                throw new Error("Something went wrong");
+              }
+        
+              async function testAsync() {
+                try {
+                  await errorTest();
+                } catch (err) {
+                  console.log("Caught error in async function:", err);
+                }
+              }
+        
+              testAsync();
+            </code>
+          </pre>
+        
+          <p>In this case, the error thrown in <code>errorTest()</code> is caught in the <code>try...catch</code> block within the <code>testAsync()</code> function.</p>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

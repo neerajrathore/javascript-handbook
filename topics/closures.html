@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Closures in JavaScript</h3>
+          <p>A closure gives you access to the outer function’s lexical scope and variables from an inner function. Every time a closure is created, the nested function remembers the variables and scope of its parent function.</p>
+          
+          <h4>Example 1: A firstName and secondName function</h4>
+          <pre class="code code--block">
+            <code>
+              function firstName() {
+                  var firstName = 'mozilla';
+                  return function secondName() {
+                      var lastName = 'firefox';
+                      return firstName + " " + lastName;
+                  }
+              }
+              let fullName = firstName();
+              console.log(fullName()); // mozilla firefox
+            </code>
+          </pre>
+        
+          <h4>Example 2: Accessing variables from the outer function</h4>
+          <pre class="code code--block">
+            <code>
+              function outer(outerValue) {
+                  return function inner(innerValue) {
+                      console.log(outerValue + " " + innerValue);
+                  }
+              }
+              const newFunc = outer("hello");
+              newFunc("bye"); // hello bye
+            </code>
+          </pre>
+        
+          <h4>Example 3: A counter function using closures</h4>
+          <pre class="code code--block">
+            <code>
+              let createCounter = (n) => {
+                  let count = n;
+                  return () => {
+                      let currentCount = count;
+                      count = count + 1;
+                      return currentCount;
+                  }
+              }
+              let counter = createCounter(10);
+              console.log(counter()); // 10
+              console.log(counter()); // 11
+            </code>
+          </pre>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

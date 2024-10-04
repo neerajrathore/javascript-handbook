@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="dynamic-title"></title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var filename = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+      document.getElementById('dynamic-title').textContent = 'JS | ' + filename;
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-topics.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">learn </span>Javascript</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/neerajrathore/javascript-handbook" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="../index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <!--could be added-->
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Difference Between <code>==</code> and <code>===</code> in JavaScript</h3>
+          <p>In JavaScript, <code>==</code> and <code>===</code> are comparison operators, but they behave differently when comparing values. The primary difference is how they handle <strong>type coercion</strong>.</p>
+        
+          <h4>1. Loose Equality (<code>==</code>)</h4>
+          <p><code>==</code> allows type conversion when comparing values of different types.</p>
+          <pre class="code code--block">
+            <code>
+              let a = 5;
+              let b = '5';
+              console.log(a == b);  // true
+            </code>
+          </pre>
+          <p>When using <code>==</code>, JavaScript converts the string <code>'5'</code> to the number <code>5</code> before comparing. This is called <strong>type coercion</strong>, which results in <code>true</code>.</p>
+        
+          <h4>2. Strict Equality (<code>===</code>)</h4>
+          <p><code>===</code> does not allow type conversion and requires both value and type to be identical.</p>
+          <pre class="code code--block">
+            <code>
+              let x = 5;
+              let y = '5';
+              console.log(x === y);  // false
+            </code>
+          </pre>
+          <p>With <code>===</code>, JavaScript compares both the value and the type. Since <code>x</code> is a number and <code>y</code> is a string, the result is <code>false</code> because the types don't match.</p>
+        
+          <h4>3. Example Breakdown</h4>
+          <p><strong>Loose Equality Example:</strong></p>
+          <pre class="code code--block">
+            <code>
+              let val1 = 0;
+              let val2 = '0';
+              console.log(val1 == val2);  // true
+            </code>
+          </pre>
+          <p>In this case, JavaScript converts the string <code>'0'</code> to the number <code>0</code> before comparing, resulting in <code>true</code>.</p>
+        
+          <p><strong>Strict Equality Example:</strong></p>
+          <pre class="code code--block">
+            <code>
+              let val1 = 0;
+              let val2 = '0';
+              console.log(val1 === val2);  // false
+            </code>
+          </pre>
+          <p>With <code>===</code>, JavaScript does not perform type conversion. Since <code>val1</code> is a number and <code>val2</code> is a string, the comparison returns <code>false</code>.</p>
+        
+          <h4>4. Key Differences</h4>
+          <ul>
+            <li><strong>Loose Equality:</strong> <code>==</code> allows type coercion, making it less strict.</li>
+            <pre class="code code--block">
+              <code>
+                let a = null;
+                let b = undefined;
+                console.log(a == b);  // true
+              </code>
+            </pre>
+            <li><strong>Strict Equality:</strong> <code>===</code> does not perform type conversion, making it more strict.</li>
+            <pre class="code code--block">
+              <code>
+                let a = null;
+                let b = undefined;
+                console.log(a === b);  // false
+              </code>
+            </pre>
+          </ul>
+        
+          <h4>5. Best Practice</h4>
+          <p>It is generally recommended to use <code>===</code> over <code>==</code> to avoid unexpected results caused by type coercion. This makes your code more predictable and easier to debug.</p>
+          <pre class="code code--block">
+            <code>
+              let a = '10';
+              let b = 10;
+        
+              if (a === b) {
+                  console.log('Strict equality is true');
+              } else {
+                  console.log('Strict equality is false');  // This will execute
+              }
+            </code>
+          </pre>
+        </section>
+        
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
