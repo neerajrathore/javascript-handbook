@@ -2,20 +2,25 @@
 
 Topics covered so far. More to come soon 
 
-1. [**Closure**](./closure/README.md).
-2. [**Hoisting**](./hoisting/README.md).
-3. [**Prototype**](./prototype/README.md).
-4. [**var & let & const**](./var-let-const/README.md).
+1. [**Array**](./array/README.md).
+2. [**Async Javascript**](./async-javascript/README.md).
+3. [**Class**](./class/README.md).
+4. [**Closure**](./closure/README.md).
 5. [**Deep & Shallow**](./deep-shallow/README.md).
-6. [**Try & Catch**](./try-catch/README.md).
-7. [**Class**](./class/README.md).
-8. [**Async Javascript**](./async-javascript/README.md).
-9. [**Double and Triple Equal**](./double-equal-and-triple-equal/README.md).
-10. [**Event Listener**](./event-listeners/README.md).
-11. [**Local and Session Storage**](./local-and-session-storage/README.md).
-12. [**Variable Scoping**](./variable-scoping/README.md).
-13. [**Array Methods**](./array-methods/README.md).
-14. [**Equality Comparison**](./equality-comparison/README.md).
+6. [**Design patterns**](./design-patterns/README.md).
+7. [**Double and Triple Equal**](./double-equal-and-triple-equal/README.md).
+8. [**Equality Comparison**](./equality-comparison/README.md).
+9. [**Event Listener**](./event-listeners/README.md).
+10. [**Event loop**](./event-loop/README.md).
+11. [**High order function**](./high-order-function/README.md).
+12. [**Hoisting**](./hoisting/README.md).
+13. [**Local and Session Storage**](./local-and-session-storage/README.md).
+14. [**Promise**](./promise/README.md).
+15. [**Property flags and descriptors**](./property-flags-and-descriptors/README.md).
+16. [**Prototype**](./prototype/README.md).
+17. [**Try & Catch**](./try-catch/README.md).
+18. [**var & let & const**](./var-let-const/README.md).
+19. [**Variable Scoping**](./variable-scoping/README.md).
 
 ## Hacktoberfest 2024 ✨
 
