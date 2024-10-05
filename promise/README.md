@@ -159,6 +159,32 @@ Promise.any([p1, p2])
   .catch(error => console.log(error));  // This will not run because p2 resolves.
 ```
 
+## Using Promises in Async/Await:
+
+The async/await syntax is built on top of promises and allows for even cleaner code when handling asynchronous operations.
+
+```javascript
+async function handleData() {
+  try {
+    const data = await fetchData();
+    const processedData = await processData(data);
+    console.log(processedData);
+  } catch (error) {
+    console.error(error);
+  }
+}
+handleData();
+```
+
+## Using `Promise.resolve()` and `Promise.reject()`:
+
+These static methods quickly create resolved or rejected promises, often useful in testing or forcing specific promise states.
+
+```javascript
+Promise.resolve("Quick resolve").then(console.log);  // Output: Quick resolve
+Promise.reject("Quick reject").catch(console.log);   // Output: Quick reject
+```
+
 ## Handling Errors in Promises
 
 Errors in promises can be handled by the `.catch()` method, or by passing an error handler to the `.then()` method.
