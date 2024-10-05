@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Loop</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Back button styling */
+        .back-btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #e5396d;
+        }
+
+        /* Content Section */
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class="back-btn">Go Back ↩</a>
+    </nav>
+
+    <section class="content">
+        <h1>Event Loop</h1>
+
+        <p class="description">
+            The Event Loop is a fundamental concept in JavaScript that enables asynchronous programming by allowing the execution of code, collecting and processing events, and executing queued sub-tasks. It helps JavaScript perform non-blocking operations, even though it is single-threaded. Below are some examples to illustrate how the Event Loop works.
+        </p>
+
+        <h2>1. Basic Understanding of the Event Loop</h2>
+        <pre><code>console.log("Start");
+
+setTimeout(() => {
+    console.log("Timeout 1");
+}, 0);
+
+setTimeout(() => {
+    console.log("Timeout 2");
+}, 0);
+
+console.log("End");</code></pre>
+        <p>Output:</p>
+        <pre><code>Start
+End
+Timeout 1
+Timeout 2</code></pre>
+
+        <h2>2. Understanding Callbacks in the Event Loop</h2>
+        <pre><code>console.log("First");
+
+setTimeout(() => {
+    console.log("Second");
+}, 1000);
+
+Promise.resolve()
+    .then(() => {
+        console.log("Third");
+    });
+
+console.log("Fourth");</code></pre>
+        <p>Output:</p>
+        <pre><code>First
+Fourth
+Third
+Second</code></pre>
+
+        <h2>3. Illustrating the Microtask Queue</h2>
+        <pre><code>console.log("A");
+
+Promise.resolve().then(() => {
+    console.log("B");
+});
+
+console.log("C");
+
+setTimeout(() => {
+    console.log("D");
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log("E");
+});
+
+console.log("F");</code></pre>
+        <p>Output:</p>
+        <pre><code>A
+C
+F
+B
+E
+D</code></pre>
+
+        <h2>4. Event Loop with Multiple Callbacks</h2>
+        <pre><code>console.log("1");
+
+setTimeout(() => {
+    console.log("2");
+}, 0);
+
+setTimeout(() => {
+    console.log("3");
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log("4");
+}).then(() => {
+    console.log("5");
+});
+
+console.log("6");</code></pre>
+        <p>Output:</p>
+        <pre><code>1
+6
+4
+5
+2
+3</code></pre>
+
+        <h2>5. Summary of the Event Loop Process</h2>
+        <p>The Event Loop constantly checks the call stack and the task queues:</p>
+        <ul>
+            <li>If the call stack is empty, it looks at the microtask queue and processes all microtasks (like resolved Promises).</li>
+            <li>Once the microtask queue is empty, it processes the next macrotask (like <code>setTimeout</code> or <code>setInterval</code>).</li>
+        </ul>
+        <p>This allows JavaScript to handle asynchronous operations effectively while maintaining a single-threaded execution model.</p>
+    </section>
+
+</body>
+</html>
