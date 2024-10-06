@@ -21,6 +21,7 @@ Topics covered so far. More to come soon
 17. [**Try & Catch**](./try-catch/README.md).
 18. [**var & let & const**](./var-let-const/README.md).
 19. [**Variable Scoping**](./variable-scoping/README.md).
+20. [**Interview Questions**](./interview-questions/README.md).
 
 ## Hacktoberfest 2024 ✨
 
