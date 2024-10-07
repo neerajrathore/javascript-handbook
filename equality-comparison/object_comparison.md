@@ -1,3 +1,4 @@
+#### [Go Back ↩](./README.md)
 # Object Comparison in JavaScript
 
 In JavaScript, objects (including arrays and functions) are compared by reference, not by value.

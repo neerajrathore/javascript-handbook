@@ -1,5 +1,5 @@
 #### [Go Back ↩](../README.md)
-## try-catch
+## Try & Catch
 
 - The code in try block is executed first. when error occur in try block code, code execution shifts to catch block.
 - try...catch can't catch errors in asynchronous code because it itself is a synchronous block.

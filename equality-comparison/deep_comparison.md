@@ -1,3 +1,4 @@
+#### [Go Back ↩](./README.md)
 # Deep Comparison of Objects and Arrays
 
 JavaScript's `==` and `===` operators compare objects by reference, not by their properties. To compare the properties of objects or arrays, we need to perform a **deep comparison**.
