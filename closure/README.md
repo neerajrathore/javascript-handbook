@@ -45,3 +45,37 @@ A closure gives you access to outer functions lexical scope and variable from an
     console.log(counter()); // 10
     console.log(counter()); // 11
     ```
+
+4. **Common Pitfalls with Closures**
+
+## Memory Leaks
+Closures can inadvertently keep references to variables that are no longer needed, leading to memory leaks.
+
+    ```javascript
+function createLeak() {
+    let largeData = new Array(1000000).fill('leak');
+    return function() {
+        console.log(largeData.length);
+    };
+}
+
+const leakyFunction = createLeak();
+// Even if `largeData` is no longer needed elsewhere, it's retained by the closure
+    ```
+
+## Looping with Closures
+
+    ```javascript
+for (var i = 0; i < 3; i++) {
+    setTimeout(function() {
+        console.log(i); // Outputs: 3, 3, 3
+    }, 1000);
+}
+
+// Solution using `let`
+for (let i = 0; i < 3; i++) {
+    setTimeout(function() {
+        console.log(i); // Outputs: 0, 1, 2
+    }, 1000);
+}
+```
