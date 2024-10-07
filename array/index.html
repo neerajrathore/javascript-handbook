@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Loops</title>
+    
+    <!-- Embedded CSS -->
+    <style>
+        /* Reset some default styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Back button styling */
+        .back-btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #e5396d;
+        }
+
+        /* Content Section */
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        /* Topics styling */
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .topic-link {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .topic-link:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .topics {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .topic-link {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class="back-btn">Go Back ↩</a>
+    </nav>
+
+    <section class="content">
+        <h1>Arrays & Loops & Project</h1>
+        <p class="description">
+            1. Arrays are used to store multiple values in a single variable.<br>
+            2. Loops are useful for executing a block of code multiple times.<br>
+            3. Build a Todo List project to practice manipulating arrays using loops, where you'll be able to add, remove, and render tasks dynamically.
+        </p>
+
+        <div class="topics">
+            <a href="./arrays/README.md" class="topic-link">Arrays</a>
+            <a href="./array-methods/README.md" class="topic-link">Array Methods</a>
+            <a href="./loops/README.md" class="topic-link">Loops</a>
+            <a href="./Todo-project/README.md" class="topic-link">Todo Project</a>
+        </div>
+    </section>
+
+</body>
+</html>

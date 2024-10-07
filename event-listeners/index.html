@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners in JavaScript</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Back button styling */
+        .back-btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #e5396d;
+        }
+
+        /* Content Section */
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../README.md" class="back-btn">Go Back ↩</a>
+    </nav>
+
+    <section class="content">
+        <h1>Event Listeners in JavaScript</h1>
+
+        <h2>Overview</h2>
+        <p class="description">
+            Event listeners are a fundamental part of web development in JavaScript, allowing developers to create interactive web applications. An event listener is a procedure in JavaScript that waits for an event to occur and executes a specified function when that event occurs. Understanding event listeners and how to use them effectively is crucial for enhancing user experiences and creating dynamic web pages.
+        </p>
+
+        <h2>What is an Event?</h2>
+        <p>Common types of events include:</p>
+        <ul>
+            <li><strong>Mouse events</strong>: <code>'click'</code>, <code>'dblclick'</code>, <code>'mouseover'</code>, <code>'mouseout'</code>.</li>
+            <li><strong>Keyboard events</strong>: <code>'keydown'</code>, <code>'keyup'</code>, <code>'keypress'</code>.</li>
+            <li><strong>Form events</strong>: <code>'submit'</code>, <code>'change'</code>, <code>'input'</code>.</li>
+            <li><strong>Window events</strong>: <code>'load'</code>, <code>'resize'</code>, <code>'scroll'</code>.</li>
+            <li><strong>Touch events</strong>: <code>'touchstart'</code>, <code>'touchend'</code>, <code>'touchmove'</code>.</li>
+        </ul>
+
+        <h2>Adding Event Listeners</h2>
+        <h3>Syntax</h3>
+        <p>
+            <code>element.addEventListener(event, function, useCapture);</code>
+        </p>
+        <ul>
+            <li><strong>event</strong>: A string representing the event type.</li>
+            <li><strong>function</strong>: The function to execute when the event is triggered.</li>
+            <li><strong>useCapture</strong>: An optional boolean indicating event capturing or bubbling.</li>
+        </ul>
+
+        <h3>Example: Adding a Click Event Listener</h3>
+        <pre><code>&lt;button id="myButton"&gt;Click Me!&lt;/button&gt;
+
+document.getElementById('myButton').addEventListener('click', function() {
+    alert('Button was clicked!');
+});</code></pre>
+
+        <h2>Removing an Event Listener</h2>
+        <pre><code>function handleClick() {
+    alert('Button was clicked!');
+}
+
+button.addEventListener('click', handleClick);
+
+// Later in the code, you can remove the listener
+button.removeEventListener('click', handleClick);</code></pre>
+
+        <h2>Event Propagation</h2>
+        <p>When an event occurs, it follows a path known as the event propagation path:</p>
+        <ul>
+            <li><strong>Capturing Phase</strong>: The event travels down to the target element.</li>
+            <li><strong>Bubbling Phase</strong>: The event bubbles back up to the top of the DOM.</li>
+        </ul>
+
+        <h3>Example: Understanding Event Propagation</h3>
+        <pre><code>&lt;div id="outer"&gt;Outer Div
+    &lt;div id="inner"&gt;Inner Div&lt;/div&gt;
+&lt;/div&gt;
+
+document.getElementById('outer').addEventListener('click', function() {
+    alert('Outer div clicked!');
+}, false);
+
+document.getElementById('inner').addEventListener('click', function(event) {
+    alert('Inner div clicked!');
+    event.stopPropagation(); // Stops bubbling
+});</code></pre>
+
+        <h2>The Event Object</h2>
+        <p>The event object contains information about the event, including:</p>
+        <ul>
+            <li><strong>type</strong>: The type of event.</li>
+            <li><strong>target</strong>: The element that triggered the event.</li>
+            <li><strong>currentTarget</strong>: The element to which the event handler is attached.</li>
+            <li><strong>preventDefault()</strong>: Prevents the default action.</li>
+        </ul>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference between == and ===</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Back button styling */
+        .back-btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #e5396d;
+        }
+
+        /* Content Section */
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        pre {
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            overflow-x: auto;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class="back-btn">Go Back ↩</a>
+    </nav>
+
+    <section class="content">
+        <h1>Difference between `==` and `===`</h1>
+        <p class="description">
+            In JavaScript, `==` and `===` are comparison operators that behave differently, especially regarding type coercion.
+        </p>
+
+        <h2>1. Loose Equality (`==`)</h2>
+        <p>Allows type conversion when comparing values of different types:</p>
+        <pre><code>
+let a = 5;
+let b = '5';
+console.log(a == b);  // true
+        </code></pre>
+
+        <h2>2. Strict Equality (`===`)</h2>
+        <p>Does not allow type conversion; both value and type must be identical:</p>
+        <pre><code>
+let x = 5;
+let y = '5';
+console.log(x === y);  // false
+        </code></pre>
+
+        <h2>3. Key Differences</h2>
+        <p>
+            - <strong>Loose Equality:</strong> <code>let a = null; let b = undefined; console.log(a == b); // true</code>
+            <br>
+            - <strong>Strict Equality:</strong> <code>let a = null; let b = undefined; console.log(a === b); // false</code>
+        </p>
+
+        <h2>4. Best Practice</h2>
+        <p>Prefer using <code>===</code> to avoid unexpected results:</p>
+        <pre><code>
+let a = '10';
+let b = 10;
+if (a === b) {
+    console.log('Strict equality is true');
+} else {
+    console.log('Strict equality is false');  // This will execute
+}
+        </code></pre>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JavaScript</title>
+    
+    <!-- Embedded CSS -->
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Back button styling */
+        .back-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Content section */
+        .content {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            font-size: 36px;
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .content p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* Code block styling */
+        code {
+            display: block;
+            background-color: #f7f7f7;
+            padding: 15px;
+            border-left: 5px solid #007bff;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-family: Consolas, 'Courier New', monospace;
+            font-size: 16px;
+            white-space: pre-wrap;
+        }
+
+        /* Subheadings styling */
+        h2 {
+            font-size: 28px;
+            margin-top: 30px;
+            color: #007bff;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* Links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 28px;
+            }
+
+            .content p {
+                font-size: 16px;
+            }
+
+            code {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class="back-btn">Go Back ↩</a>
+    </nav>
+
+    <section class="content">
+        <h1>Async JavaScript</h1>
+
+        <p>
+            JavaScript is single-threaded, meaning it can only do one thing at a time. However, with asynchronous programming, JavaScript can perform non-blocking operations, allowing other code to run while waiting for long-running tasks to complete.
+        </p>
+
+        <h2>1. Synchronous vs Asynchronous Execution</h2>
+        <p>Synchronous code executes line by line, meaning each line waits for the previous one to finish before executing. Asynchronous code, however, allows certain tasks (like network requests) to happen in the background without blocking the execution of other code.</p>
+
+        <code>
+            console.log("Start");<br><br>
+            setTimeout(() => {<br>
+            &nbsp;&nbsp;console.log("Async Operation");<br>
+            }, 2000);  // This executes after 2 seconds<br><br>
+            console.log("End");
+        </code>
+
+        <p>Explanation:</p>
+        <ul>
+            <li><strong>Start</strong> is logged first.</li>
+            <li>The <code>setTimeout</code> is asynchronous, so it schedules the operation to run in 2 seconds and allows the program to continue.</li>
+            <li><strong>End</strong> is logged immediately after <strong>Start</strong>.</li>
+            <li>After 2 seconds, the <strong>Async Operation</strong> is logged.</li>
+        </ul>
+
+        <h2>2. Callbacks</h2>
+        <p>A callback function is a function passed as an argument to another function and is executed once the asynchronous operation completes.</p>
+
+        <code>
+            function fetchData(callback) {<br>
+            &nbsp;&nbsp;setTimeout(() => {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;console.log("Data fetched");<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;callback();<br>
+            &nbsp;&nbsp;}, 2000);<br>
+            }<br><br>
+            function processData() {<br>
+            &nbsp;&nbsp;console.log("Processing data");<br>
+            }<br><br>
+            fetchData(processData);
+        </code>
+
+        <p>Explanation:</p>
+        <ul>
+            <li><code>fetchData</code> simulates an async operation using <code>setTimeout</code>.</li>
+            <li>After 2 seconds, "Data fetched" is logged, and the callback function is executed.</li>
+        </ul>
+
+        <h2>3. Promises</h2>
+        <p>Promises provide a cleaner, more powerful way to handle asynchronous code compared to callbacks. A promise represents a value that may be available now, or in the future, or never.</p>
+
+        <code>
+            let fetchData = new Promise((resolve, reject) => {<br>
+            &nbsp;&nbsp;setTimeout(() => {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;let success = true;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if (success) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve("Data fetched successfully");<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reject("Data fetching failed");<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;}, 2000);<br>
+            });<br><br>
+            fetchData<br>
+            &nbsp;&nbsp;.then((message) => {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;console.log(message);<br>
+            &nbsp;&nbsp;})<br>
+            &nbsp;&nbsp;.catch((error) => {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;console.log(error);<br>
+            &nbsp;&nbsp;});
+        </code>
+
+        <!-- Continue with remaining sections -->
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Prototypes: A Comprehensive Guide</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Back button styling */
+        .back-btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #e5396d;
+        }
+
+        /* Content Section */
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class="back-btn">Go Back ↩</a>
+    </nav>
+
+    <section class="content">
+        <h1>JavaScript Prototypes: A Comprehensive Guide</h1>
+
+        <h2>Introduction</h2>
+        <p class="description">
+            JavaScript is a prototype-based language. Every object has a built-in property prototype used to inherit properties and methods from other objects.
+        </p>
+
+        <h2>Understanding Prototypes</h2>
+        <ul>
+            <li>When accessing a property or method, JavaScript checks the object, its prototype, and so on, until it reaches the end of the prototype chain.</li>
+            <li>The prototype serves as a class from which the current object can inherit methods.</li>
+        </ul>
+
+        <h2>Different Ways Prototypes Are Used</h2>
+        <ol>
+            <li><a href="./object-prototype/README.md">Object Prototype</a></li>
+            <li><a href="./function-prototype/README.md">Function Prototype</a></li>
+            <li><a href="./constructor-prototype/README.md">Constructor Prototype</a></li>
+            <li><a href="./class-prototype/README.md">Class Prototype</a></li>
+        </ol>
+    </section>
+
+</body>
+</html>
