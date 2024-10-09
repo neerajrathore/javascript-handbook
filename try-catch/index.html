@@ -3,78 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Try & Catch: Error Handling</title>
-
-    <!-- Embedded CSS -->
-    <style>
-        /* Reset some default styles */
-        body, h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* General body styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f0f0;
-            padding: 20px;
-            color: #333;
-        }
-
-        /* Back button styling */
-        .back-btn {
-            background-color: #ff4081;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        .back-btn:hover {
-            background-color: #e5396d;
-        }
-
-        /* Content Section */
-        .content {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .content h1 {
-            text-align: center;
-            font-size: 32px;
-            color: #333;
-        }
-
-        .description {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 20px 0;
-        }
-
-        pre {
-            background-color: #f8f8f8;
-            padding: 10px;
-            border-left: 5px solid #ff4081;
-            overflow-x: auto;
-        }
-
-        ul, ol {
-            padding-left: 20px;
-            font-size: 18px;
-        }
-
-        li {
-            margin: 10px 0;
-        }
-    </style>
+    <title>Event Loop</title>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    <link rel="stylesheet" href="../main.css">
 </head>
 <body>
 
@@ -83,79 +14,7 @@
     </nav>
 
     <section class="content">
-        <h1>JavaScript Try & Catch: Error Handling</h1>
-
-        <h2>Introduction</h2>
-        <p class="description">
-            The code in the try block is executed first. If an error occurs, the execution shifts to the catch block. However, try...catch cannot catch errors in asynchronous code.
-        </p>
-
-        <h2>Example Code</h2>
-        <pre><code>
-// business / checkNumber logic
-function checkNumber(number) {
-  if (isNaN(number) || number < 0) {
-    return new Error("not valid please");
-  }
-  return true;
-}
-
-// user Input
-window.addEventListener("load", function () {
-  const inputtedNumber = parseInt(this.window.prompt("Enter Number to verify"));
-
-  try {
-    const isNumberValid = checkNumber(inputtedNumber);
-
-    if (isNumberValid instanceof Error) {
-      console.error(isNumberValid.message);
-      throw RangeError("Not a valid number!");
-    } else {
-      console.log("Try was successful, so no need to catch!");
-    }
-  } catch (error) {
-    console.error(error, "catchError");
-  }
-
-  console.log("end");
-});
-        </code></pre>
-
-        <h2>Handling Asynchronous Errors</h2>
-        <p class="description">
-            Using try...catch directly in asynchronous code won't work because the callback is executed later. Use Promises or async/await for proper error handling.
-        </p>
-
-        <h3>Example with Promise</h3>
-        <pre><code>
-new Promise((resolve, reject) => {
-  setTimeout(() => {
-    try {
-      throw new Error('err');
-    } catch (err) {
-      reject(err);
-    }
-  }, 200);
-})
-.catch((err) => {
-  console.log(err); // Error caught here
-});
-        </code></pre>
-
-        <h3>Async/Await Example</h3>
-        <pre><code>
-async function handleError() {
-  try {
-    await Promise.resolve().then(() => {
-      throw new Error('err');
-    });
-  } catch (err) {
-    console.log(err); // Error caught here
-  }
-}
-handleError();
-        </code></pre>
-
+        <zero-md src="./README.md"></zero-md>
     </section>
 
 </body>

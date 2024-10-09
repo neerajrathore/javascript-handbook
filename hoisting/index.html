@@ -3,79 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoisting</title>
-
-    <!-- Embedded CSS -->
-    <style>
-        /* Reset some default styles */
-        body, h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* General body styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f0f0;
-            padding: 20px;
-            color: #333;
-        }
-
-        /* Back button styling */
-        .back-btn {
-            background-color: #ff4081;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        .back-btn:hover {
-            background-color: #e5396d;
-        }
-
-        /* Content Section */
-        .content {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .content h1 {
-            text-align: center;
-            font-size: 32px;
-            color: #333;
-        }
-
-        .description {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 20px 0;
-        }
-
-        pre {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            overflow-x: auto;
-        }
-
-        ol {
-            padding-left: 20px;
-            font-size: 18px;
-        }
-
-        li {
-            margin: 10px 0;
-        }
-    </style>
+    <title>Event Loop</title>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    <link rel="stylesheet" href="../main.css">
 </head>
 <body>
 
@@ -84,47 +14,7 @@
     </nav>
 
     <section class="content">
-        <h1>Hoisting</h1>
-
-        <p class="description">
-            Hoisting is a process of declaring variables and functions and moving them to the top of the scope before execution of the code.
-        </p>
-
-        <h2>1. Hoisting when using var for variable declaration:</h2>
-        <pre><code>console.log(number); // undefined
-var number = 10;
-console.log(number); // 10
-        </code></pre>
-
-        <h2>2. Hoisting when using let & const for variable declaration:</h2>
-        <p>Using let or const throws a ReferenceError before initialization:</p>
-        <pre><code>console.log(number); // ReferenceError
-let number = 10;
-console.log(number);
-        </code></pre>
-
-        <p>Undeclared variables are not hoisted:</p>
-        <pre><code>console.log(otherNumber); // ReferenceError
-let number = 10;
-console.log(number);
-        </code></pre>
-
-        <h2>3. Temporal Dead Zone of let & const variable hoisted:</h2>
-        <pre><code>console.log(number); // ReferenceError
-let number = 10;
-console.log(number);
-        </code></pre>
-
-        <h2>4. All undeclared variables are global variables:</h2>
-        <pre><code>function hoist() {
-    a = 2;
-    var b = 5;
-}
-hoist();
-
-console.log(a); // 2
-console.log(b); // ReferenceError
-        </code></pre>
+        <zero-md src="./README.md"></zero-md>
     </section>
 
 </body>
