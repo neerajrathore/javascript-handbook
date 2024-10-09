@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding call(), apply(), and bind() in JavaScript</title>
+    <style>
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Back button styling */
+        .back-btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #e5396d;
+        }
+
+        /* Content Section */
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        pre {
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            overflow-x: auto;
+        }
+
+        /* Topics styling */
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .topic-link {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .topic-link:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .topics {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .topic-link {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/index.html" class="back-btn">Go Back ↩</a>
+    </nav>
+
+    <div class="content">
+        <h1>Understanding call(), apply(), and bind() in JavaScript</h1>
+        <p class="description">In JavaScript, <code>call()</code>, <code>apply()</code>, and <code>bind()</code> are methods used to set the value of <code>this</code> in a function and pass arguments to it. Let’s explore each method in detail.</p>
+        
+        <h2>1. call()</h2>
+        <p><code>call()</code> invokes a function with a specified <code>this</code> value and arguments provided individually.</p>
+        <pre>
+<code>
+function greet(greeting) {
+    console.log(greeting + ', ' + this.name);
+}
+
+const person = { name: 'Alice' };
+greet.call(person, 'Hello'); // Output: "Hello, Alice"
+</code>
+        </pre>
+
+        <h2>2. apply()</h2>
+        <p><code>apply()</code> is similar to <code>call()</code>, but it takes arguments as an array.</p>
+        <pre>
+<code>
+function greet(greeting1, greeting2) {
+    console.log(greeting1 + ' and ' + greeting2 + ', ' + this.name);
+}
+
+const person = { name: 'Bob' };
+greet.apply(person, ['Hi', 'Hola']); // Output: "Hi and Hola, Bob"
+</code>
+        </pre>
+
+        <h2>3. bind()</h2>
+        <p><code>bind()</code> returns a new function with a bound <code>this</code> value and allows you to preset parameters.</p>
+        <pre>
+<code>
+function greet(greeting) {
+    console.log(greeting + ', ' + this.name);
+}
+
+const person = { name: 'Charlie' };
+const greetCharlie = greet.bind(person);
+greetCharlie('Hey'); // Output: "Hey, Charlie"
+</code>
+        </pre>
+
+        <h2>Key Differences</h2>
+        <ul>
+            <li><strong>Invocation:</strong> <code>call()</code> and <code>apply()</code> immediately invoke the function, while <code>bind()</code> creates a new function for later use.</li>
+            <li><strong>Arguments:</strong> <code>call()</code> accepts individual arguments, <code>apply()</code> accepts an array, and <code>bind()</code> allows presetting arguments.</li>
+        </ul>
+
+        <h2>When to Use Each</h2>
+        <ul>
+            <li>Use <code>call()</code> when you want to invoke the function immediately with a specified <code>this</code> context.</li>
+            <li>Use <code>apply()</code> when you have an array of arguments and want to invoke the function immediately.</li>
+            <li>Use <code>bind()</code> when you want to create a new function with a specific <code>this</code> value for later invocation.</li>
+        </ul>
+    </div>
+
+    <a class="back-btn" href="#">Back to Top</a>
+</body>
+</html>
