@@ -1,7 +1,25 @@
-# JavaScript Handbook
+<div align="center">
+  <img height="60" src="https://img.icons8.com/color/344/javascript.png">
+</div>
 
-Topics covered so far. More to come soon 
+# <div align="center">`JavaScript Handbook`</div>
 
+<br>
+<div align="center">
+
+[![GitHub repo forks](https://img.shields.io/github/forks/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=whitesmoke&label=Forks)](https://github.com/neerajrathore/javascript-handbook/network)&#160;
+[![GitHub repo stars](https://img.shields.io/github/stars/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=whitesmoke&label=Stars)](https://github.com/neerajrathore/javascript-handbook/stargazers)&#160;
+[![GitHub repo contributors](https://img.shields.io/github/contributors-anon/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=whitesmoke&label=Contributors)](https://github.com/neerajrathore/javascript-handbook/graphs/contributors)
+[![GitHub repo Issues](https://img.shields.io/github/issues/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=red&label=Issues)](https://github.com/neerajrathore/javascript-handbook/issues)&#160;
+[![GitHub repo PRs](https://img.shields.io/github/issues-pr/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=orange&label=PRs)](https://github.com/neerajrathore/javascript-handbook/pulls)&#160;
+[![GitHub repo Merged PRs](https://img.shields.io/github/issues-search/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=green&label=Merged%20PRs&query=is%3Amerged)](https://github.com/neerajrathore/javascript-handbook/pulls?q=is%3Apr+is%3Amerged)&#160;
+
+</div>
+
+## Overview
+*This JavaScript handbook offers a comprehensive introduction of various concepts in JavaScript. Whether you're a beginner or an experienced developer, this handbook will guide you through the world of JavaScript using clear explanations and well-commented code examples*
+
+## Table of Contents
 1. [**Array**](./array/README.md).
 2. [**Async Javascript**](./async-javascript/README.md).
 3. [**Class**](./class/README.md).
@@ -67,3 +85,5 @@ Many thanks to these amazing people :
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 Happy Contributing! 🚀
+
+**[⬆ back to top](#table-of-contents)**
