@@ -23,6 +23,7 @@ Topics covered so far. More to come soon
 19. [**Variable Scoping**](./variable-scoping/README.md).
 20. [**JavaScript Callback**](./callback/README.md).
 21. [**JavaScript Debounced Search**](./debouncing/README.md).
+22. [**JavaScript Interview Questions**](./interview-questions/README.md).
 
 ## Hacktoberfest 2024 ✨
 
