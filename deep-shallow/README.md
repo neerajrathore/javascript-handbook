@@ -1,4 +1,3 @@
-#### [Go Back ↩](../README.md) 
 <h3>Deep and shallow copies</h3>
 <!-- [Deep and shallow copies](#deep-and-shallow-copies) -->
 

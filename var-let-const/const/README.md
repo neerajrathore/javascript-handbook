@@ -1,4 +1,3 @@
-#### [Go Back ↩](../README.md)
 ##  const
 
 - const is used to declare block scoped variables and cannot be reassigned to new value.
