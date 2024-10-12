@@ -86,6 +86,13 @@ Many thanks to these amazing people :
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/yashksaini-coder">
+                    <img src="https://avatars.githubusercontent.com/u/115717039?v=4" width="100;" alt="yashksaini-coder"/>
+                    <br />
+                    <sub><b>Yash Kumar Saini</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/Ashish93-mrx">
                     <img src="https://avatars.githubusercontent.com/u/76056451?v=4" width="100;" alt="Ashish93-mrx"/>
                     <br />
@@ -106,6 +113,8 @@ Many thanks to these amazing people :
                     <sub><b>Mohit ahlawat</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/sajalgarg45">
                     <img src="https://avatars.githubusercontent.com/u/144695016?v=4" width="100;" alt="sajalgarg45"/>
@@ -113,8 +122,6 @@ Many thanks to these amazing people :
                     <sub><b>Sajal Garg</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/sujanrupu">
                     <img src="https://avatars.githubusercontent.com/u/103595490?v=4" width="100;" alt="sujanrupu"/>
@@ -150,6 +157,8 @@ Many thanks to these amazing people :
                     <sub><b>Ashutosh Kumar</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/ajayvaniya0">
                     <img src="https://avatars.githubusercontent.com/u/131126584?v=4" width="100;" alt="ajayvaniya0"/>
@@ -157,8 +166,6 @@ Many thanks to these amazing people :
                     <sub><b>Ajay Vaniya</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/ArpitCS">
                     <img src="https://avatars.githubusercontent.com/u/133118520?v=4" width="100;" alt="ArpitCS"/>
