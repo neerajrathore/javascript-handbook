@@ -67,22 +67,8 @@ To copy the link manually, here is the URL:
 ## Contributors 🌎
 
 Many thanks to these amazing people :
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="25%"><a href="https://github.com/neerajrathore"><img src="https://avatars.githubusercontent.com/u/11667917?v=4" width="100px;"/><br /><sub><b>Neeraj Rathore</b></sub></a><br /></td>
-      <td align="center" valign="top" width="25%"><a href="https://github.com/Bharath-KumarReddy"><img src="https://avatars.githubusercontent.com/u/127650446?v=4" width="100px;"/><br /><sub><b>Bharath-KumarReddy</b></sub></a><br /></td>
-      <td align="center" valign="top" width="25%"><a href="https://github.com/DhanushNehru"><img src="https://avatars.githubusercontent.com/u/22955675?v=4" width="100px;"/><br /><sub><b>Dhanush</b></sub></a><br /></td>
-      <td align="center" valign="top" width="25%"><a href="https://github.com/suryanshsingh2001"><img src="https://avatars.githubusercontent.com/u/80690023?v=4" width="100px;"/><br /><sub><b>Suryansh Singh</b></sub></a><br /></td>
-    </tr>
-  </tbody>
-</table>
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
 
 Happy Contributing! 🚀
 
