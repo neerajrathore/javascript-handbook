@@ -333,7 +333,7 @@ button:hover {
     transform: translateY(1px);
 }
 
-.toast-container {
+/* .toast-container {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -368,4 +368,4 @@ button:hover {
     to {
         opacity: 0;
     }
-}
+} */
