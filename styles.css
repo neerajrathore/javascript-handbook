@@ -109,13 +109,11 @@ section h2 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Add hover effect to cards */
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for the text inside cards */
 .card a {
     font-size: 18px;
     color: #333;
