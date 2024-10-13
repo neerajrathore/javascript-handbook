@@ -236,36 +236,77 @@ button:hover {
 }
 
 /* Contact Us form */
-#contact{
+#contact {
     padding: 20px;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    margin-bottom: 50px;
 }
 
-form input, form textarea {
+.contact-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-left: 6px solid #ff4081;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-form button {
-    background-color: #333;
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff4081;
+    box-shadow: 0 0 0 2px rgba(255, 64, 129, 0.2);
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #ff4081;
     color: white;
-    margin: auto;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin-top: 10px;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
     border-radius: 5px;
-    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
 }
 
-form button:hover {
-    background-color: #555;
+.submit-btn:hover {
+    background-color: #e91e63;
+    transform: translateY(-2px);
 }
 
+.submit-btn:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 20px;
+    }
+}
 /* Back to Top Button */
 #backToTopBtn {
     position: fixed;
