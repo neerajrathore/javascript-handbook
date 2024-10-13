@@ -1,4 +1,3 @@
-#### [Go Back ↩](../README.md)
 
 ## Difference between `==` and `===`
 

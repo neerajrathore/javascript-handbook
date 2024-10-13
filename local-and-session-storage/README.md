@@ -1,4 +1,3 @@
-#### [Go Back ↩](../README.md)
 
 # Local Storage and Session Storage
 

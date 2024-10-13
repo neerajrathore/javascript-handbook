@@ -1,4 +1,3 @@
-#### [Go Back ↩](../README.md)
 ## var & let & const
 
 let & const was introduced in ES6. earlier var was used.

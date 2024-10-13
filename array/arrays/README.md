@@ -1,4 +1,3 @@
-#### [Go Back ↩](../README.md)
 ## arrays
 
 - List of Values: Arrays store multiple values in a single variable.

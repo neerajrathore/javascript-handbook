@@ -1,4 +1,3 @@
-#### [Go Back ↩](../README.md)
 ## let 
 
 - let is used to declare block scoped variables.

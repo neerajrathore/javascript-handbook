@@ -1,4 +1,3 @@
-#### [Go Back ↩](../README.md)
 
 # Variable Scoping in JavaScript
 
