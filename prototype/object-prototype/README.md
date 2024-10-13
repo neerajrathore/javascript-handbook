@@ -1,3 +1,5 @@
+#### [Go Back ↩](../README.md)
+
 ## Object Prototype
 
   - JavaScript prototypes are used to access the properties and methods of objects. To get object prototype we use `__proto__`or `Object.getPrototypeOf()`

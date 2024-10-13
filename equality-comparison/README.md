@@ -1,3 +1,5 @@
+#### [Go Back ↩](../README.md)
+
 # Equality Comparison in JavaScript
 
 This section covers the key concepts of equality comparison in JavaScript, including the differences between loose and strict equality, object comparison, and deep comparison.

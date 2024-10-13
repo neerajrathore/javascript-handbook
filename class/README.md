@@ -1,3 +1,4 @@
+#### [Go Back ↩](../README.md)
 ## Class
 
 Classes are templates for JavaScript Objects.

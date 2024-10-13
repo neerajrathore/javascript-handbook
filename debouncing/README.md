@@ -1,3 +1,4 @@
+#### [Go Back ↩](../README.md)
 # Debounced Search Example 🎯
 
 This project demonstrates a simple **debouncing** technique in JavaScript to optimize performance when handling frequent events, such as user input in a search field. Debouncing helps prevent multiple rapid function calls by delaying execution until the user has stopped interacting for a specified time.

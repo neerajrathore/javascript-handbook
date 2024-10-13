@@ -1,3 +1,4 @@
+#### [Go Back ↩](../README.md)
 ## Async JavaScript
 
 JavaScript is single-threaded, meaning it can only do one thing at a time. However, with asynchronous programming, JavaScript can perform non-blocking operations, allowing other code to run while waiting for long-running tasks to complete. Below are examples and detailed explanations of different async patterns in JavaScript.

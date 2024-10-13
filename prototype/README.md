@@ -1,3 +1,5 @@
+#### [Go Back ↩](../README.md)
+
 ## Prototypes
 
 - JavaScript is a prototype-based language. Every object in JavaScript has a built-in property prototype.

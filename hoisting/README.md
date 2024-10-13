@@ -1,3 +1,5 @@
+#### [Go Back ↩](../README.md)
+
 ## Hoisting
 
 Hoisting is a process of declaring variables and function and moving them on top scope before execution of the code.

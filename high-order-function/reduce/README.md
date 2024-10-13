@@ -1,3 +1,5 @@
+#### [Go Back ↩](../README.md)
+
 # JavaScript reduce() Function Explained
 
 The `reduce()` function is a powerful method available on JavaScript arrays. It executes a reducer function on each element of the array, resulting in a single output value. This method is particularly useful for performing calculations on arrays, transforming array data, or reducing an array to a single value.

@@ -1,3 +1,4 @@
+#### [Go Back ↩](../README.md)
 # Understanding Currying in JavaScript
 
 This project demonstrates the concept of currying in JavaScript, its usefulness, and compares it with partial application. It also includes a simple functional discount calculator to show the real-world application of currying.

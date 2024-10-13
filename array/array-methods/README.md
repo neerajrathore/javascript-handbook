@@ -1,3 +1,5 @@
+#### [Go Back ↩](../README.md)
+
 # JavaScript Arrays
 
 Arrays in JavaScript are a collection of elements, which can be of any type, including numbers, strings, objects, or even other arrays. They are ordered, mutable, and provide numerous built-in methods to manipulate and interact with the data. Here we will discuss about the various methods that can be used in Javascript arrays
