@@ -79,17 +79,17 @@ Many thanks to these amazing people :
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/lord-cyclone100">
-                    <img src="https://avatars.githubusercontent.com/u/121711381?v=4" width="100;" alt="lord-cyclone100"/>
-                    <br />
-                    <sub><b>Sangneel Deb</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/yashksaini-coder">
                     <img src="https://avatars.githubusercontent.com/u/115717039?v=4" width="100;" alt="yashksaini-coder"/>
                     <br />
                     <sub><b>Yash Kumar Saini</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/lord-cyclone100">
+                    <img src="https://avatars.githubusercontent.com/u/121711381?v=4" width="100;" alt="lord-cyclone100"/>
+                    <br />
+                    <sub><b>Sangneel Deb</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -159,6 +159,13 @@ Many thanks to these amazing people :
             </td>
 		</tr>
 		<tr>
+            <td align="center">
+                <a href="https://github.com/Shinu-ster">
+                    <img src="https://avatars.githubusercontent.com/u/122474221?v=4" width="100;" alt="Shinu-ster"/>
+                    <br />
+                    <sub><b>Sajat Bajracharya</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/ajayvaniya0">
                     <img src="https://avatars.githubusercontent.com/u/131126584?v=4" width="100;" alt="ajayvaniya0"/>
