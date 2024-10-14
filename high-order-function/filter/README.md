@@ -1,4 +1,4 @@
-#### [Go Back ↩](../README.md)
+<!-- #### [Go Back ↩](../README.md) -->
 # JavaScript filter() Function Explained
 
 The `filter()` function is a built-in method on JavaScript arrays that creates a new array with all elements that pass the test implemented by the provided function. It's a powerful tool for selecting specific elements from an array based on certain criteria.

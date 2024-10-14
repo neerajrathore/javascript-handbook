@@ -1,4 +1,4 @@
-#### [Go Back ↩](../README.md) 
+<!-- #### [Go Back ↩](../README.md)  -->
 ## Class Prototype
 
   - A class also has this object prototype to look back to its origins, all the way up through Object. As a constructor function it is also chained from below to all its instances.

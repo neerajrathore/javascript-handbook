@@ -1,4 +1,4 @@
-#### [Go Back ↩](../README.md)
+<!-- #### [Go Back ↩](../README.md) -->
 ## Arrays & Loops & Project
 
  1. Arrays are used to store multiple values in a single variable. 

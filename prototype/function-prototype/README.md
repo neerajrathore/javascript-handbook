@@ -1,4 +1,4 @@
-#### [Go Back ↩](../README.md) 
+<!-- #### [Go Back ↩](../README.md)  -->
 ## Table of Contents
 * [Prototype Chain](#-prototype-chain)
 ## Function Prototype

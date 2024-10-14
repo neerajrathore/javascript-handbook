@@ -1,4 +1,4 @@
-#### [Go Back ↩](../README.md)
+<!-- #### [Go Back ↩](../README.md) -->
 # JavaScript map() Function Explained
 
 The `map()` function is a built-in method on JavaScript arrays that allows you to transform each element of an array using a provided function. It creates a new array with the results of calling the provided function on every element in the original array.

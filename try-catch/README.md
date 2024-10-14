@@ -1,4 +1,4 @@
-#### [Go Back ↩](../README.md)
+<!-- #### [Go Back ↩](../README.md) -->
 ## Try & Catch
 
 - The code in try block is executed first. when error occur in try block code, code execution shifts to catch block.

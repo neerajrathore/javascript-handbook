@@ -1,4 +1,4 @@
-#### [Go Back ↩](../README.md)
+<!-- #### [Go Back ↩](../README.md) -->
 ## Event Loop
 
 The Event Loop is a fundamental concept in JavaScript that enables asynchronous programming by allowing the execution of code, collecting and processing events, and executing queued sub-tasks. It helps JavaScript perform non-blocking operations, even though it is single-threaded. Below are some examples to illustrate how the Event Loop works.

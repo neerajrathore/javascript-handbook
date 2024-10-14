@@ -1,4 +1,4 @@
-#### [Go Back ↩](./README.md)
+<!-- #### [Go Back ↩](./README.md) -->
 # Loose Equality (`==`) vs Strict Equality (`===`)
 
 JavaScript provides two ways to compare values: loose equality (`==`) and strict equality (`===`).

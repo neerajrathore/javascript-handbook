@@ -1,4 +1,4 @@
-#### [Go Back ↩](../README.md)
+<!-- #### [Go Back ↩](../README.md) -->
 ## var
 
 - var is used to declare function scoped or globally scoped variables.
