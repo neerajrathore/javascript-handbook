@@ -246,9 +246,10 @@ button:hover {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    max-width: 600px;
+    width: 100%; /* Full width */
     margin: 0 auto;
     border-left: 6px solid #ff4081;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .form-group {
