@@ -1,112 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Design Patterns Guide for JavaScript</title>
-    
-    <!-- Embedded CSS -->
-    <style>
-        /* Reset some default styles */
-        body, h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* General body styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f0f0;
-            padding: 20px;
-            color: #333;
-        }
-
-        /* Back button styling */
-        .back-btn {
-            background-color: #ff4081;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        .back-btn:hover {
-            background-color: #e5396d;
-        }
-
-        /* Content Section */
-        .content {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .content h1 {
-            text-align: center;
-            font-size: 32px;
-            color: #333;
-        }
-
-        .description {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 20px 0;
-        }
-
-        pre {
-            background-color: #f7f7f7;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            overflow-x: auto;
-        }
-
-        /* Topics styling */
-        .topics {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .topic-link {
-            background-color: #007bff;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 8px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, transform 0.3s;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .topic-link:hover {
-            background-color: #0056b3;
-            transform: translateY(-5px);
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 600px) {
-            .topics {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .topic-link {
-                width: 80%;
-                text-align: center;
-            }
-        }
-    </style>
+    <title>Design Patterns</title>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    <link rel="stylesheet" href="../main.css">
 </head>
+
 <body>
 
     <nav>
@@ -114,89 +16,9 @@
     </nav>
 
     <section class="content">
-        <h1>Software Design Patterns Guide for JavaScript</h1>
-        <p class="description">
-            Explore key software design patterns to enhance your JavaScript skills and create robust applications.
-        </p>
-
-        <h2>1. The Singleton Pattern</h2>
-        <p>This pattern ensures a class has only one instance...</p>
-        <pre><code>
-class Singleton {
-    constructor() {
-        if (!Singleton.instance) {
-            Singleton.instance = this;
-        }
-        return Singleton.instance;
-    }
-}
-        </code></pre>
-
-        <h2>2. The Observer Pattern</h2>
-        <p>This pattern allows a subject to notify observers...</p>
-        <pre><code>
-class Subject {
-    constructor() {
-        this.observers = [];
-    }
-    addObserver(observer) {
-        this.observers.push(observer);
-    }
-}
-        </code></pre>
-
-        <h2>3. The Factory Pattern</h2>
-        <p>This pattern provides a way to create objects...</p>
-        <pre><code>
-class EnemyFactory {
-    createEnemy(type) {
-        if (type === 'orc') {
-            return new Orc();
-        }
-    }
-}
-        </code></pre>
-
-        <h2>4. The Module Pattern</h2>
-        <p>This pattern allows encapsulation of private and public methods...</p>
-        <pre><code>
-const Module = (function() {
-    let privateVar = 0;
-    return {
-        increment: function() { privateVar++; },
-        getPrivateVar: function() { return privateVar; }
-    };
-})();
-        </code></pre>
-
-        <h2>5. The Adapter Pattern</h2>
-        <p>This pattern allows objects with incompatible interfaces to work together...</p>
-        <pre><code>
-class OldSystem {
-    request() { return 'Old system'; }
-}
-class Adapter {
-    constructor(oldSystem) { this.oldSystem = oldSystem; }
-    request() { return this.oldSystem.request(); }
-}
-        </code></pre>
-
-        <h2>6. The Composite Pattern</h2>
-        <p>This pattern allows you to treat individual objects and composites uniformly...</p>
-        <pre><code>
-class Composite {
-    constructor() {
-        this.children = [];
-    }
-    add(child) { this.children.push(child); }
-}
-        </code></pre>
-
-        <div class="topics">
-            <a href="../index.html" class="topic-link">Go Back to Overview</a>
-            <!-- Add other relevant topic links here if needed -->
-        </div>
+        <zero-md src="./README.md"></zero-md>
     </section>
 
 </body>
+
 </html>

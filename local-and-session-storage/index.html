@@ -1,92 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Storage and Session Storage</title>
-
-    <!-- Embedded CSS -->
-    <style>
-        /* Reset some default styles */
-        body, h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* General body styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f0f0;
-            padding: 20px;
-            color: #333;
-        }
-
-        /* Back button styling */
-        .back-btn {
-            background-color: #ff4081;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        .back-btn:hover {
-            background-color: #e5396d;
-        }
-
-        /* Content Section */
-        .content {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .content h1 {
-            text-align: center;
-            font-size: 32px;
-            color: #333;
-        }
-
-        .description {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 20px 0;
-        }
-
-        pre {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            overflow-x: auto;
-        }
-
-        h2 {
-            margin-top: 20px;
-            font-size: 24px;
-        }
-
-        h3 {
-            margin-top: 15px;
-            font-size: 20px;
-        }
-
-        ol {
-            padding-left: 20px;
-            font-size: 18px;
-        }
-
-        li {
-            margin: 10px 0;
-        }
-    </style>
+    <title>Local and Session Storage</title>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    <link rel="stylesheet" href="../main.css">
 </head>
+
 <body>
 
     <nav>
@@ -94,65 +16,9 @@
     </nav>
 
     <section class="content">
-        <h1>Local Storage and Session Storage</h1>
-
-        <p class="description">
-            This document provides an overview of Local Storage and Session Storage in web development. Both are part of the Web Storage API, which allows web applications to store data in the user's browser.
-        </p>
-
-        <h2>Local Storage</h2>
-        <h3>Definition</h3>
-        <p>Local Storage is a web storage mechanism that allows you to store data in key/value pairs in a web browser with no expiration time. Data stored in Local Storage persists even after the browser is closed and reopened.</p>
-
-        <h3>Key Features</h3>
-        <ul>
-            <li><strong>Capacity:</strong> Typically allows storage of up to 5-10 MB of data.</li>
-            <li><strong>Persistence:</strong> Data remains even when the browser is closed.</li>
-            <li><strong>Scope:</strong> Data is accessible only to the origin that created it.</li>
-        </ul>
-
-        <h3>Use Cases</h3>
-        <ul>
-            <li>Storing user preferences or settings.</li>
-            <li>Caching data for offline use.</li>
-            <li>Keeping track of user activity.</li>
-        </ul>
-
-        <h3>Example Usage</h3>
-        <pre><code>localStorage.setItem('key', 'value');
-const value = localStorage.getItem('key');
-localStorage.removeItem('key');
-localStorage.clear();
-        </code></pre>
-
-        <h2>Session Storage</h2>
-        <h3>Definition</h3>
-        <p>Session Storage is a web storage mechanism that allows you to store data in key/value pairs in a web browser. Unlike Local Storage, data stored in Session Storage is cleared when the page session ends.</p>
-
-        <h3>Key Features</h3>
-        <ul>
-            <li><strong>Capacity:</strong> Similar to Local Storage, usually around 5-10 MB.</li>
-            <li><strong>Persistence:</strong> Data is available only for the duration of the page session.</li>
-            <li><strong>Scope:</strong> Data is accessible only to the origin that created it and is available within the same tab.</li>
-        </ul>
-
-        <h3>Use Cases</h3>
-        <ul>
-            <li>Storing temporary data for a single session.</li>
-            <li>Keeping track of user input in forms across page refreshes.</li>
-            <li>Managing user session information.</li>
-        </ul>
-
-        <h3>Example Usage</h3>
-        <pre><code>sessionStorage.setItem('key', 'value');
-const value = sessionStorage.getItem('key');
-sessionStorage.removeItem('key');
-sessionStorage.clear();
-        </code></pre>
-
-        <h2>Conclusion</h2>
-        <p>Local Storage and Session Storage are powerful tools for web developers, allowing for efficient data storage in the user's browser. Understanding the differences between the two can help you choose the right storage mechanism for your application needs.</p>
+        <zero-md src="./README.md"></zero-md>
     </section>
 
 </body>
+
 </html>

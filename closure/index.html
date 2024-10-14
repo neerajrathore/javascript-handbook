@@ -1,112 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Closures</title>
-    
-    <!-- Embedded CSS -->
-    <style>
-        /* Reset some default styles */
-        body, h1, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* General body styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f0f0;
-            padding: 20px;
-            color: #333;
-        }
-
-        /* Back button styling */
-        .back-btn {
-            background-color: #ff4081;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        .back-btn:hover {
-            background-color: #e5396d;
-        }
-
-        /* Content Section */
-        .content {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .content h1 {
-            text-align: center;
-            font-size: 32px;
-            color: #333;
-        }
-
-        .description {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 20px 0;
-        }
-
-        pre {
-            background-color: #f7f7f7;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            overflow-x: auto;
-        }
-
-        /* Topics styling */
-        .topics {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .topic-link {
-            background-color: #007bff;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 8px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, transform 0.3s;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .topic-link:hover {
-            background-color: #0056b3;
-            transform: translateY(-5px);
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 600px) {
-            .topics {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .topic-link {
-                width: 80%;
-                text-align: center;
-            }
-        }
-    </style>
+    <title>Closure</title>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    <link rel="stylesheet" href="../main.css">
 </head>
+
 <body>
 
     <nav>
@@ -114,58 +16,9 @@
     </nav>
 
     <section class="content">
-        <h1>Closures</h1>
-        <p class="description">
-            A closure gives you access to an outer function's lexical scope and variables from an inner function. 
-            Every time a new closure is created when calling the nested function.
-        </p>
-
-        <h2>Examples</h2>
-
-        <h3>1. FirstName and SecondName Functions</h3>
-        <pre><code>
-function firstName() {
-    var firstName = 'mozilla';
-    return function secondName() {
-        var lastName = 'firefox';
-        return firstName + " " + lastName;
-    }
-}
-let fullName = firstName();
-fullName(); // mozilla firefox
-        </code></pre>
-
-        <h3>2. Outer Function with Inner Function</h3>
-        <pre><code>
-function outer(outerValue) {
-    return function inner(innerValue) {
-        console.log(outerValue + " " + innerValue);
-    }
-}
-const newFunc = outer("hello");
-newFunc("bye"); // hello bye
-        </code></pre>
-
-        <h3>3. CreateCounter Function</h3>
-        <pre><code>
-let createCounter = (n) => {
-    let count = n;
-    return () => {
-        let currentCount = count;
-        count = count + 1;
-        return currentCount;
-    }
-}
-let counter = createCounter(10);
-console.log(counter()); // 10
-console.log(counter()); // 11
-        </code></pre>
-
-        <div class="topics">
-            <a href="../index.html" class="topic-link">Go Back to Overview</a>
-            <!-- Add other relevant topic links here if needed -->
-        </div>
+        <zero-md src="./README.md"></zero-md>
     </section>
 
 </body>
+
 </html>

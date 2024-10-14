@@ -1,7 +1,25 @@
-# JavaScript Handbook
+<div align="center">
+  <img height="60" src="https://img.icons8.com/color/344/javascript.png">
+</div>
 
-Topics covered so far. More to come soon 
+# <div align="center">`JavaScript Handbook`</div>
 
+<br>
+<div align="center">
+
+[![GitHub repo forks](https://img.shields.io/github/forks/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=whitesmoke&label=Forks)](https://github.com/neerajrathore/javascript-handbook/network)&#160;
+[![GitHub repo stars](https://img.shields.io/github/stars/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=whitesmoke&label=Stars)](https://github.com/neerajrathore/javascript-handbook/stargazers)&#160;
+[![GitHub repo contributors](https://img.shields.io/github/contributors-anon/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=whitesmoke&label=Contributors)](https://github.com/neerajrathore/javascript-handbook/graphs/contributors)
+[![GitHub repo Issues](https://img.shields.io/github/issues/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=red&label=Issues)](https://github.com/neerajrathore/javascript-handbook/issues)&#160;
+[![GitHub repo PRs](https://img.shields.io/github/issues-pr/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=orange&label=PRs)](https://github.com/neerajrathore/javascript-handbook/pulls)&#160;
+[![GitHub repo Merged PRs](https://img.shields.io/github/issues-search/neerajrathore/javascript-handbook?style=flat&logo=github&logoColor=green&label=Merged%20PRs&query=is%3Amerged)](https://github.com/neerajrathore/javascript-handbook/pulls?q=is%3Apr+is%3Amerged)&#160;
+
+</div>
+
+## Overview
+*This JavaScript handbook offers a comprehensive introduction of various concepts in JavaScript. Whether you're a beginner or an experienced developer, this handbook will guide you through the world of JavaScript using clear explanations and well-commented code examples*
+
+## Table of Contents
 1. [**Array**](./array/README.md).
 2. [**Async Javascript**](./async-javascript/README.md).
 3. [**Class**](./class/README.md).
@@ -23,6 +41,7 @@ Topics covered so far. More to come soon
 19. [**Variable Scoping**](./variable-scoping/README.md).
 20. [**JavaScript Callback**](./callback/README.md).
 21. [**JavaScript Debounced Search**](./debouncing/README.md).
+22. [**JavaScript Interview Questions**](./interview-questions/README.md).
 
 ## Hacktoberfest 2024 ✨
 
@@ -48,21 +67,145 @@ To copy the link manually, here is the URL:
 ## Contributors 🌎
 
 Many thanks to these amazing people :
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
+<!-- readme: contributors -start -->
 <table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="25%"><a href="https://github.com/neerajrathore"><img src="https://avatars.githubusercontent.com/u/11667917?v=4" width="100px;"/><br /><sub><b>Neeraj Rathore</b></sub></a><br /></td>
-      <td align="center" valign="top" width="25%"><a href="https://github.com/Bharath-KumarReddy"><img src="https://avatars.githubusercontent.com/u/127650446?v=4" width="100px;"/><br /><sub><b>Bharath-KumarReddy</b></sub></a><br /></td>
-      <td align="center" valign="top" width="25%"><a href="https://github.com/DhanushNehru"><img src="https://avatars.githubusercontent.com/u/22955675?v=4" width="100px;"/><br /><sub><b>Dhanush</b></sub></a><br /></td>
-      <td align="center" valign="top" width="25%"><a href="https://github.com/suryanshsingh2001"><img src="https://avatars.githubusercontent.com/u/80690023?v=4" width="100px;"/><br /><sub><b>Suryansh Singh</b></sub></a><br /></td>
-    </tr>
-  </tbody>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/neerajrathore">
+                    <img src="https://avatars.githubusercontent.com/u/11667917?v=4" width="100;" alt="neerajrathore"/>
+                    <br />
+                    <sub><b>Neeraj Rathore</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/yashksaini-coder">
+                    <img src="https://avatars.githubusercontent.com/u/115717039?v=4" width="100;" alt="yashksaini-coder"/>
+                    <br />
+                    <sub><b>Yash Kumar Saini</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/lord-cyclone100">
+                    <img src="https://avatars.githubusercontent.com/u/121711381?v=4" width="100;" alt="lord-cyclone100"/>
+                    <br />
+                    <sub><b>Sangneel Deb</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Ashish93-mrx">
+                    <img src="https://avatars.githubusercontent.com/u/76056451?v=4" width="100;" alt="Ashish93-mrx"/>
+                    <br />
+                    <sub><b>Ashish N M</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/THE-ASHUTOSH">
+                    <img src="https://avatars.githubusercontent.com/u/82095076?v=4" width="100;" alt="THE-ASHUTOSH"/>
+                    <br />
+                    <sub><b>Ashutosh Kumar</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/suryanshsingh2001">
+                    <img src="https://avatars.githubusercontent.com/u/80690023?v=4" width="100;" alt="suryanshsingh2001"/>
+                    <br />
+                    <sub><b>Suryansh Singh</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/sujanrupu">
+                    <img src="https://avatars.githubusercontent.com/u/103595490?v=4" width="100;" alt="sujanrupu"/>
+                    <br />
+                    <sub><b>Sujan Ghosh</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/sajalgarg45">
+                    <img src="https://avatars.githubusercontent.com/u/144695016?v=4" width="100;" alt="sajalgarg45"/>
+                    <br />
+                    <sub><b>Sajal Garg</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/mohitahlawat2001">
+                    <img src="https://avatars.githubusercontent.com/u/65100859?v=4" width="100;" alt="mohitahlawat2001"/>
+                    <br />
+                    <sub><b>Mohit ahlawat</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Bharath-KumarReddy">
+                    <img src="https://avatars.githubusercontent.com/u/127650446?v=4" width="100;" alt="Bharath-KumarReddy"/>
+                    <br />
+                    <sub><b>Bharath-KumarReddy</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/bhaavvya">
+                    <img src="https://avatars.githubusercontent.com/u/110487270?v=4" width="100;" alt="bhaavvya"/>
+                    <br />
+                    <sub><b>Bhavya</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/DhanushNehru">
+                    <img src="https://avatars.githubusercontent.com/u/22955675?v=4" width="100;" alt="DhanushNehru"/>
+                    <br />
+                    <sub><b>Dhanush </b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/Shinu-ster">
+                    <img src="https://avatars.githubusercontent.com/u/122474221?v=4" width="100;" alt="Shinu-ster"/>
+                    <br />
+                    <sub><b>Sajat Bajracharya</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ajayvaniya0">
+                    <img src="https://avatars.githubusercontent.com/u/131126584?v=4" width="100;" alt="ajayvaniya0"/>
+                    <br />
+                    <sub><b>Ajay Vaniya</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ArpitCS">
+                    <img src="https://avatars.githubusercontent.com/u/133118520?v=4" width="100;" alt="ArpitCS"/>
+                    <br />
+                    <sub><b>ArpitCS</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/chaitanya-bhargava">
+                    <img src="https://avatars.githubusercontent.com/u/97454068?v=4" width="100;" alt="chaitanya-bhargava"/>
+                    <br />
+                    <sub><b>Chaitanya Bhargava</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/guruprasath-v">
+                    <img src="https://avatars.githubusercontent.com/u/138384576?v=4" width="100;" alt="guruprasath-v"/>
+                    <br />
+                    <sub><b>Guruprasath</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/T-Rahul-prabhu-38">
+                    <img src="https://avatars.githubusercontent.com/u/167653990?v=4" width="100;" alt="T-Rahul-prabhu-38"/>
+                    <br />
+                    <sub><b>t rahul prabhu</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
 </table>
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- readme: contributors -end -->
 
 Happy Contributing! 🚀
+
+**[⬆ back to top](#table-of-contents)**

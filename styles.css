@@ -56,16 +56,42 @@ header{
 
 }
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffdee3;
+    border-left: 6px solid #ff4081;
     padding: 1rem 0;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
+@media(max-width: 950px){
+    header {
+        background-color: #ffdee3;
+        border-left: 6px solid #ff4081;
+        padding: 1rem 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;        
+    }
+    header h1 {
+        margin: 0rem 1rem 0rem;
+        display: inline;
+    }
+}
 header h1 {
-    margin-bottom: 1rem;
+    margin: 0rem 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+header h1 img {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+nav{
+    margin: 0rem 1rem 0rem;
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -77,12 +103,20 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-weight: bold;
+    transition: 300ms;
+}
+nav ul li a i {
+    font-size: 15px;
 }
 
 nav ul li a:hover {
+    color: #ff4081;
+}
+nav ul li a i:hover {
+    font-size: 15px;
     color: #ff4081;
 }
 
@@ -140,7 +174,7 @@ section h2 {
 /* Add hover effect to card text */
 .card a:hover {
     color: #ff4081; /* Change this color to any other color you prefer */
-    text-decoration: underline;
+    
 }
 
 /* For making text look bold and emphasized */
@@ -201,6 +235,9 @@ section h2 {
 
 
 /* Share section */
+#share{
+    padding:20px;
+}
 .share-info {
     background-color: #fff8f1;
     border: 2px solid #ff4081;
@@ -209,12 +246,17 @@ section h2 {
     text-align: center;
     color: #333;
 }
-
+i{
+    color: #000;
+    font-size: 30px;
+    margin: 5px;
+}
 .social-handles {
     font-size: 1.2rem;
     color: #ff4081;
     margin: 15px 0;
 }
+
 
 #url-input {
     width: 80%;
@@ -239,6 +281,9 @@ button:hover {
 }
 
 /* Contact Us form */
+#contact{
+    padding: 20px;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -254,11 +299,12 @@ form input, form textarea {
 form button {
     background-color: #333;
     color: white;
-    border: none;
+    margin: auto;
     padding: 10px 15px;
     cursor: pointer;
     margin-top: 10px;
     border-radius: 5px;
+    padding: 15px;
 }
 
 form button:hover {
