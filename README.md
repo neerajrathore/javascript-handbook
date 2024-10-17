@@ -100,12 +100,21 @@ Many thanks to these amazing people :
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/devp299">
+                    <img src="https://avatars.githubusercontent.com/u/170864478?v=4" width="100;" alt="devp299"/>
+                    <br />
+                    <sub><b>devp299</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/THE-ASHUTOSH">
                     <img src="https://avatars.githubusercontent.com/u/82095076?v=4" width="100;" alt="THE-ASHUTOSH"/>
                     <br />
                     <sub><b>Ashutosh Kumar</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/suryanshsingh2001">
                     <img src="https://avatars.githubusercontent.com/u/80690023?v=4" width="100;" alt="suryanshsingh2001"/>
@@ -113,8 +122,6 @@ Many thanks to these amazing people :
                     <sub><b>Suryansh Singh</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/sujanrupu">
                     <img src="https://avatars.githubusercontent.com/u/103595490?v=4" width="100;" alt="sujanrupu"/>
@@ -150,6 +157,8 @@ Many thanks to these amazing people :
                     <sub><b>Bhavya</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/DhanushNehru">
                     <img src="https://avatars.githubusercontent.com/u/22955675?v=4" width="100;" alt="DhanushNehru"/>
@@ -157,8 +166,6 @@ Many thanks to these amazing people :
                     <sub><b>Dhanush </b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/Shinu-ster">
                     <img src="https://avatars.githubusercontent.com/u/122474221?v=4" width="100;" alt="Shinu-ster"/>
@@ -194,6 +201,8 @@ Many thanks to these amazing people :
                     <sub><b>Guruprasath</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/T-Rahul-prabhu-38">
                     <img src="https://avatars.githubusercontent.com/u/167653990?v=4" width="100;" alt="T-Rahul-prabhu-38"/>
