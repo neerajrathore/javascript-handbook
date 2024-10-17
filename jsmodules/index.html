@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyModule.js Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #f4f4f4;
+            padding: 2rem;
+            position: fixed;
+        }
+        .sidebar h2 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        .sidebar ul {
+            list-style-type: none;
+        }
+        .sidebar ul li {
+            margin-bottom: 0.5rem;
+        }
+        .sidebar ul li a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .sidebar ul li a:hover {
+            color: #2980b9;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 2rem;
+            max-width: 800px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .method {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        .method h3 {
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+        code {
+            background-color: #f8f8f8;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .parameter {
+            margin-top: 1rem;
+        }
+        .parameter strong {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <h2>MyModule.js</h2>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#methods">Methods</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <h1>MyModule.js Documentation</h1>
+        
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>MyModule.js is a lightweight JavaScript library for handling common tasks in web development.</p>
+        </section>
+        
+        <section id="installation">
+            <h2>Installation</h2>
+            <p>You can install MyModule.js using npm:</p>
+            <code>npm install mymodule-js</code>
+        </section>
+        
+        <section id="usage">
+            <h2>Usage</h2>
+            <p>To use MyModule.js in your project, import it as follows:</p>
+            <code>import MyModule from 'mymodule-js';</code>
+        </section>
+        
+        <section id="methods">
+            <h2>Methods</h2>
+            
+            <div class="method">
+                <h3>MyModule.formatDate(date)</h3>
+                <p>Formats a given date into a readable string.</p>
+                <div class="parameter">
+                    <strong>Parameters:</strong>
+                    <ul>
+                        <li><code>date</code> (Date): The date to format</li>
+                    </ul>
+                </div>
+                <div class="parameter">
+                    <strong>Returns:</strong>
+                    <p>(String): Formatted date string</p>
+                </div>
+            </div>
+            
+            <div class="method">
+                <h3>MyModule.calculateSum(numbers)</h3>
+                <p>Calculates the sum of an array of numbers.</p>
+                <div class="parameter">
+                    <strong>Parameters:</strong>
+                    <ul>
+                        <li><code>numbers</code> (Array): An array of numbers</li>
+                    </ul>
+                </div>
+                <div class="parameter">
+                    <strong>Returns:</strong>
+                    <p>(Number): The sum of all numbers in the array</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
