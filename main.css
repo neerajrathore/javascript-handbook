@@ -12,6 +12,13 @@ body {
     color: #333;
 }
 
+nav {
+    /* sticky changes  */
+    position: sticky;
+    top: 15px;
+    z-index: 1;
+}
+
 /* Back button styling */
 .back-btn {
     background-color: #ff4081;
