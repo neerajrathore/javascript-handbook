@@ -100,10 +100,17 @@ Many thanks to these amazing people :
                 </a>
             </td>
             <td align="center">
+
                 <a href="https://github.com/Sahoobarsharani">
                     <img src="https://avatars.githubusercontent.com/u/147238995?v=4" width="100;" alt="Sahoobarsharani"/>
                     <br />
                     <sub><b>BarshaRani Sahoo1176</b></sub>
+
+                <a href="https://github.com/devp299">
+                    <img src="https://avatars.githubusercontent.com/u/170864478?v=4" width="100;" alt="devp299"/>
+                    <br />
+                    <sub><b>devp299</b></sub>
+
                 </a>
             </td>
             <td align="center">

@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array Methods</title>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
     <link rel="stylesheet" href="../../main.css">
+    <script type="module">
+        import ZeroMd, { STYLES } from 'https://cdn.jsdelivr.net/npm/zero-md@3'
+        customElements.define('zero-md', class extends ZeroMd {
+            async load() {
+                await super.load()
+                this.template = STYLES.preset('light')
+            }
+        })
+    </script>
 </head>
 
 <body>
@@ -16,7 +24,15 @@
     </nav>
 
     <section class="content">
-        <zero-md src="./README.md"></zero-md>
+        <zero-md src="./README.md">
+            <template data-append>
+                <style>
+                    #go-back- {
+                        display: none;
+                    }
+                </style>
+            </template>
+        </zero-md>
     </section>
 
 </body>

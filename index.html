@@ -17,7 +17,6 @@
                 <li><a href="#share">Home</a></li>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#topics">Topics</a></li>
-                <li><a href="#hacktoberfest">Hacktoberfest</a></li>
                 <li><a href="#share">Share</a></li>
 
                 <li><a href="#contact">Contact Us</a></li>
@@ -43,49 +42,86 @@
         </section>
 
         <section id="topics">
-            <h2>Key JavaScript Concepts</h2>
-            <div class="card-container">
-                <div class="card"><a href="./array/index.html">Array</a></div>
-                <div class="card"><a href="./destructuring-and-rest-spread/index.html">Destructing and Rest/Spread</a></div>
-                <div class="card"><a href="./async-javascript/index.html">Async JavaScript</a></div>
-                <div class="card"><a href="./callback/index.html">Callback</a></div>
-                <div class="card"><a href="./class/index.html">Class</a></div>
-                <div class="card"><a href="./closure/index.html">Closure</a></div>
-                <div class="card"><a href="./currying/index.html">Curring</a></div>
-                <div class="card"><a href="./debouncing/index.html">Debouncing</a></div>
-                <div class="card"><a href="./deep-shallow/index.html">Deep & Shallow</a></div>
-                <div class="card"><a href="./design-patterns/index.html">Design Patterns</a></div>
-                <div class="card"><a href="./double-equal-and-triple-equal/index.html">Double and Triple Equals</a></div>
-                <div class="card"><a href="./equality-comparison/index.html">Equality Comparison</a></div>
-                <div class="card"><a href="./event-listeners/index.html">Event Listener</a></div>
-                <div class="card"><a href="./event-loop/index.html">Event Loop</a></div>
-                <div class="card"><a href="./high-order-function/index.html">High Order Function</a></div>
-                <div class="card"><a href="./hoisting/index.html">Hoisting</a></div>
-                <div class="card"><a href="./local-and-session-storage/index.html">Local & Session Storage</a></div>
-                <div class="card"><a href="./promise/index.html">Promise</a></div>
-                <div class="card"><a href="./property-flags-and-descriptors/index.html">Property Flags & Descriptors</a></div>
-                <div class="card"><a href="./prototype/index.html">Prototype</a></div>
-                <div class="card"><a href="./try-catch/index.html">Try & Catch</a></div>
-                <div class="card"><a href="./var-let-const/index.html">var, let & const</a></div>
-                <div class="card"><a href="./variable-scoping/index.html">Variable Scoping</a></div>
-                <div class="card"><a href="./interview-questions/index.html">Interview Questions</a></div>
+            <!-- <h2>Key JavaScript Concepts</h2> -->
+            <div id="sub-topic">
+                <h2>1. JavaScript Basics</h2>
+                <div class="card-container">
+                    <div class="card"><a href="./var-let-const/index.html">var, let & const</a></div>
+                    <div class="card"><a href="./variable-scoping/index.html">Variable Scoping</a></div>
+                    <div class="card"><a href="./double-equal-and-triple-equal/index.html">Double and Triple Equals</a>
+                    </div>
+                    <div class="card"><a href="./equality-comparison/index.html">Equality Comparison</a></div>
+                    <div class="card"><a href="./array/index.html">Array</a></div>
+                    <div class="card"><a href="./destructuring-and-rest-spread/index.html">Destructing and
+                            Rest/Spread</a></div>
+                    <div class="card"><a href="./hoisting/index.html">Hoisting</a></div>
+                </div>
             </div>
-            </div>
-        </section>
 
-        <section id="hacktoberfest">
-            <h2>Hacktoberfest 2024 ✨</h2>
-            <div class="hacktoberfest-info">
-                <p>This project is participating in Hacktoberfest 2024!</p>
-                <p>We welcome contributions from the open-source community, by adding new JavaScript topics or
-                    enhancements to the documentation. Every contribution counts toward your Hacktoberfest goal.</p>
-                <h3>How to Contribute</h3>
-                <ol>
-                    <li>Fork this repository and create a new branch.</li>
-                    <li>Find an issue to work on, or propose a new feature by opening an issue.</li>
-                    <li>Submit your pull request before <strong>October 31st</strong> to make it count for
-                        Hacktoberfest!</li>
-                </ol>
+            <div id="sub-topic">
+                <h2>2. Object-Oriented JavaScript (OOP)</h2>
+                <div class="card-container">
+                    <div class="card"><a href="./class/index.html">Class</a></div>
+                    <div class="card"><a href="./prototype/index.html">Prototype</a></div>
+                    <div class="card"><a href="./property-flags-and-descriptors/index.html">Property Flags &
+                            Descriptors</a></div>
+                </div>
+            </div>
+
+            <div id="sub-topic">
+                <h2>3. Asynchronous JavaScript</h2>
+                <div class="card-container">
+                    <div class="card"><a href="./async-javascript/index.html">Async JavaScript</a></div>
+                    <div class="card"><a href="./callback/index.html">Callback</a></div>
+                    <div class="card"><a href="./promise/index.html">Promise</a></div>
+                    <div class="card"><a href="./event-loop/index.html">Event Loop</a></div>
+                    <div class="card"><a href="./try-catch/index.html">Try & Catch</a></div>
+                </div>
+            </div>
+
+            <div id="sub-topic">
+                <h2>4. Advanced Functions & Concepts</h2>
+                <div class="card-container">
+                    <div class="card"><a href="./closure/index.html">Closure</a></div>
+                    <div class="card"><a href="./currying/index.html">Curring</a></div>
+                    <div class="card"><a href="./debouncing/index.html">Debouncing</a></div>
+                    <div class="card"><a href="./high-order-function/index.html">High Order Function</a></div>
+                </div>
+            </div>
+
+            <div id="sub-topic">
+                <h2>5. Browser API & Storage</h2>
+                <div class="card-container">
+                    <div class="card"><a href="./local-and-session-storage/index.html">Local & Session Storage</a></div>
+                </div>
+            </div>
+
+            <div id="sub-topic">
+                <h2>6. Comparison & Evaluation</h2>
+                <div class="card-container">
+                    <div class="card"><a href="./deep-shallow/index.html">Deep & Shallow</a></div>
+                </div>
+            </div>
+
+            <div id="sub-topic">
+                <h2>7. Event Handling</h2>
+                <div class="card-container">
+                    <div class="card"><a href="./event-listeners/index.html">Event Listener</a></div>
+                </div>
+            </div>
+
+            <div id="sub-topic">
+                <h2>8. Interview Preparation</h2>
+                <div class="card-container">
+                    <div class="card"><a href="./interview-questions/index.html">Interview Questions</a></div>
+                </div>
+            </div>
+
+            <div id="sub-topic">
+                <h2>9. JavaScript Design Patterns & Best Practices</h2>
+                <div class="card-container">
+                    <div class="card"><a href="./design-patterns/index.html">Design Patterns</a></div>
+                </div>
             </div>
         </section>
     </main>
@@ -96,22 +132,22 @@
         <div class="share-info">
             <p>Share on Social Media:</p>
             <div class="social-handles">
-                <a
-                        href="https://x.com/intent/post?url=https%3A%2F%2Fneerajrathore.github.io%2Fjavascript-handbook%2F&text=Check+out+this+JavaScript+Handbook%21+" title="Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                
-                <a
-                        href="https://www.linkedin.com/feed/?linkOrigin=LI_BADGE&shareActive=true&shareUrl=https%3A%2F%2Fneerajrathore.github.io%2Fjavascript-handbook%2F" title="Linkedin"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                
-                <a
-                        href="https://www.facebook.com/share_channel/?link=https%3A%2F%2Fneerajrathore.github.io%2Fjavascript-handbook%2F&app_id=966242223397117&source_surface=external_reshare&display&hashtag" title="Facebook"  target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/intent/post?url=https%3A%2F%2Fneerajrathore.github.io%2Fjavascript-handbook%2F&text=Check+out+this+JavaScript+Handbook%21+"
+                    title="Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
 
-                <a 
-                        href="https://telegram.me/share/url?url=https%3A%2F%2Fneerajrathore.github.io%2Fjavascript-handbook%2F&text=Check+out+this+JavaScript+Handbook%21" title="Telegram" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.linkedin.com/feed/?linkOrigin=LI_BADGE&shareActive=true&shareUrl=https%3A%2F%2Fneerajrathore.github.io%2Fjavascript-handbook%2F"
+                    title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 
-                <a 
-                        href="https://api.whatsapp.com/send?text=Check+out+this+JavaScript+Handbook%21+https%3A%2F%2Fneerajrathore.github.io%2Fjavascript-handbook%2F" title="Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/share_channel/?link=https%3A%2F%2Fneerajrathore.github.io%2Fjavascript-handbook%2F&app_id=966242223397117&source_surface=external_reshare&display&hashtag"
+                    title="Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
 
-                
+                <a href="https://telegram.me/share/url?url=https%3A%2F%2Fneerajrathore.github.io%2Fjavascript-handbook%2F&text=Check+out+this+JavaScript+Handbook%21"
+                    title="Telegram" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+
+                <a href="https://api.whatsapp.com/send?text=Check+out+this+JavaScript+Handbook%21+https%3A%2F%2Fneerajrathore.github.io%2Fjavascript-handbook%2F"
+                    title="Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+
             </div>
             <p>To copy the link manually, here is the URL:</p>
             <input type="text" value="https://neerajrathore.github.io/javascript-handbook/" id="url-input" readonly>
@@ -119,24 +155,29 @@
         </div>
     </section>
 
-    <!-- Contact Us Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="contact-card">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
     </section>
     </main>
     <button id="backToTopBtn">Back to Top</button>
+
 
  <!-------testimonial---->
     
@@ -228,6 +269,8 @@
         <div class="reviews" id="reviews">
         </div>
     </div>
+
+
 
     <script src="scripts.js"></script>
 </body>

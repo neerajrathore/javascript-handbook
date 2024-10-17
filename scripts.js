@@ -14,13 +14,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const createToastContainer = () => {
+    let toastContainer = document.querySelector('.toast-container');
+    if (!toastContainer) {
+        toastContainer = document.createElement('div');
+        toastContainer.className = 'toast-container';
+        document.body.appendChild(toastContainer);
+    }
+    return toastContainer;
+}
+
+const showToast = (message, duration = 2000) => {
+    const toastContainer = createToastContainer();
+    
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.innerText = message;
+    
+    toastContainer.appendChild(toast);
+
+    setTimeout(() => {
+        toast.remove();
+    }, duration);
+}
 
 function copyURL() {
     const copyText = document.getElementById('url-input');
     copyText.select();
     document.execCommand("copy");
-    alert("Link copied to clipboard!");
+
+    showToast("Link copied to clipboard!", 2000); 
 }
+
 // Back to Top button functionality
 let backToTopBtn = document.getElementById("backToTopBtn");
 
