@@ -10,6 +10,59 @@ body {
     background-color: #f4f4f4;
 }
 
+.dark-mode {
+    /* background: rgb(42,54,74);
+background: linear-gradient(0deg, rgba(42,54,74,1) 0%, rgba(42,54,74,1) 31%); */
+background-color: rgb(30, 29, 29);
+    color: white;
+}
+
+.dark-mode h2 {
+    background: #CFE7FA;
+background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    
+    /* color:white; */
+    
+    
+}
+
+.dark-mode nav {
+    color: white;
+}
+
+.dark-mode nav ul a {
+    color: #dadada;
+}
+
+.dark-mode header {
+    background: rgb(46, 43, 44);
+    background: linear-gradient(0deg, rgba(46, 43, 44, 1) 0%, rgba(27, 26, 30, 1) 100%);
+}
+
+.dark-mode .card {
+    background: rgb(19,120,157);
+    background: linear-gradient(0deg, rgba(19,120,157,1) 0%, rgba(28,103,130,1) 61%);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.dark-mode .card a {
+    color: white;
+}
+
+.dark-mode .contact-card {
+    background-color: black;
+}
+
+.dark-mode .form-group label {
+    color: white !important;
+}
+
 header {
     background-color: #ffdee3;
     border-left: 6px solid #ff4081;
@@ -19,34 +72,45 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-@media(max-width: 950px){
+header img {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+
+@media(max-width: 950px) {
     header {
         background-color: #ffdee3;
         border-left: 6px solid #ff4081;
         padding: 1rem 0;
         text-align: center;
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
     }
+
     header h1 {
         margin: 0rem 1rem 0rem;
         display: inline;
     }
 }
+
 header h1 {
     margin: 0rem 1rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 header h1 img {
     height: 60px;
     width: 60px;
     object-fit: contain;
 }
-nav{
+
+nav {
     margin: 0rem 1rem 0rem;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -63,6 +127,7 @@ nav ul li a {
     font-weight: bold;
     transition: 300ms;
 }
+
 nav ul li a i {
     font-size: 15px;
 }
@@ -70,6 +135,7 @@ nav ul li a i {
 nav ul li a:hover {
     color: #ff4081;
 }
+
 nav ul li a i:hover {
     font-size: 15px;
     color: #ff4081;
@@ -90,6 +156,7 @@ section h2 {
     border-bottom: 2px solid #ff4081;
     padding-bottom: 5px;
 }
+
 /* General card styling */
 .card-container {
     display: flex;
@@ -128,8 +195,9 @@ section h2 {
 
 /* Add hover effect to card text */
 .card a:hover {
-    color: #ff4081; /* Change this color to any other color you prefer */
-    
+    color: #ff4081;
+    /* Change this color to any other color you prefer */
+
 }
 
 /* For making text look bold and emphasized */
@@ -140,7 +208,8 @@ section h2 {
 
 /* For smooth transition of text color */
 .card a:hover {
-    color: #ff4081; /* Attractive hover effect */
+    color: #ff4081;
+    /* Attractive hover effect */
     cursor: pointer;
 }
 
@@ -190,9 +259,10 @@ section h2 {
 
 
 /* Share section */
-#share{
-    padding:20px;
+#share {
+    padding: 20px;
 }
+
 .share-info {
     background-color: #fff8f1;
     border: 2px solid #ff4081;
@@ -201,11 +271,13 @@ section h2 {
     text-align: center;
     color: #333;
 }
-i{
+
+i {
     color: #000;
     font-size: 30px;
     margin: 5px;
 }
+
 .social-handles {
     font-size: 1.2rem;
     color: #ff4081;
@@ -246,10 +318,12 @@ button:hover {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    width: 100%; /* Full width */
+    width: 100%;
+    /* Full width */
     margin: 0 auto;
     border-left: 6px solid #ff4081;
-    box-sizing: border-box; /* Ensure padding is included in width */
+    box-sizing: border-box;
+    /* Ensure padding is included in width */
 }
 
 .form-group {
@@ -308,6 +382,7 @@ button:hover {
         padding: 20px;
     }
 }
+
 /* Back to Top Button */
 #backToTopBtn {
     position: fixed;
@@ -356,6 +431,7 @@ button:hover {
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(0);
     }
@@ -365,6 +441,7 @@ button:hover {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
