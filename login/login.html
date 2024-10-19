@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="stylesheet" href="/login/login.css">
+    
+    <script src="https://kit.fontawesome.com/6afefce1fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  </header>
+    <div class="container">
+      <div class="form-container">
+        <!-- Login Form -->
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required id="login-password">
+                <label>Password</label>
+                <button type="button" class="toggle-password" id="toggle-login-password">
+                  <ion-icon name="eye-off-outline" id="eye-icon-login"></ion-icon>
+                </button>
+              </div>
+            <div class="remember">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-signup">
+              <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+            </div>
+          </form>
+        </div>
+  
+        <!-- Signup Form -->
+        <div class="form-box signup">
+            <h2>Sign Up</h2>
+            <form action="#">
+              <div class="input-box">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" required>
+                <label>Username</label>
+              </div>
+              <div class="input-box">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" required>
+                <label>Email</label>
+              </div>
+              <div class="input-box">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required id="signup-password">
+                <label>Password</label>
+                <button type="button" class="toggle-password" id="toggle-signup-password">
+                  <ion-icon name="eye-off-outline" id="eye-icon-signup"></ion-icon>
+                </button>
+              </div>
+              <div class="input-box">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required id="signup-password">
+                <label>Confirm Password</label>
+                <button type="button" class="toggle-password" id="toggle-signup-password">
+                  <ion-icon name="eye-off-outline" id="eye-icon-signup"></ion-icon>
+                </button>
+              </div>
+              <button type="submit" class="btn">Sign Up</button>
+              <div class="login-signup">
+                <p style="color: white;">Already have an account? <a href="#" class="login-link">Login</a></p>
+              </div>
+            </form>
+          </div>
+  
+      </div>
+      <a class="back" href="../index.html">Back</a>
+    </div>
+   
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="/login/login.js"></script>
+  </body>
+</html>
