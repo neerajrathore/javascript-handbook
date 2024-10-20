@@ -28,18 +28,18 @@ header {
         display: flex;
         flex-direction: column;        
     }
-    header h1 {
+    span h1 {
         margin: 0rem 1rem 0rem;
         display: inline;
     }
 }
-header h1 {
+span h1 {
     margin: 0rem 1rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header h1 img {
+span h1 img {
     height: 60px;
     width: 60px;
     object-fit: contain;
@@ -52,28 +52,37 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+nav li {
     display: inline;
     margin-right: 15px;
 }
 
-nav ul li a {
-    color: black;
+nav li a {
+    color: rgb(49, 5, 5);
     text-decoration: none;
     font-weight: bold;
     transition: 300ms;
 }
-nav ul li a i {
-    font-size: 15px;
+nav li a i {
+    font-size: 10px;
 }
 
-nav ul li a:hover {
+nav  li a:hover {
     color: #ff4081;
 }
-nav ul li a i:hover {
+nav  li a i:hover {
     font-size: 15px;
     color: #ff4081;
 }
+.demo-layout-transparent {
+    background-color: #d885a1;
+  }
+  .demo-layout-transparent .mdl-layout__header,
+  .demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+    color: white;
+  }
 
 main {
     padding: 20px;
