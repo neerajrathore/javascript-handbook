@@ -152,14 +152,21 @@ Many thanks to these amazing people :
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/AADESHak007">
+                    <img src="https://avatars.githubusercontent.com/u/123197632?v=4" width="100;" alt="AADESHak007"/>
+                    <br />
+                    <sub><b>Aadesh_Kumar</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
                 <a href="https://github.com/bhaavvya">
                     <img src="https://avatars.githubusercontent.com/u/110487270?v=4" width="100;" alt="bhaavvya"/>
                     <br />
                     <sub><b>Bhavya</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/DhanushNehru">
                     <img src="https://avatars.githubusercontent.com/u/22955675?v=4" width="100;" alt="DhanushNehru"/>
@@ -195,6 +202,8 @@ Many thanks to these amazing people :
                     <sub><b>Chaitanya Bhargava</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/guruprasath-v">
                     <img src="https://avatars.githubusercontent.com/u/138384576?v=4" width="100;" alt="guruprasath-v"/>
@@ -202,8 +211,13 @@ Many thanks to these amazing people :
                     <sub><b>Guruprasath</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
+            <td align="center">
+                <a href="https://github.com/shreya-paul-17">
+                    <img src="https://avatars.githubusercontent.com/u/135226069?v=4" width="100;" alt="shreya-paul-17"/>
+                    <br />
+                    <sub><b>Shreya Paul</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/T-Rahul-prabhu-38">
                     <img src="https://avatars.githubusercontent.com/u/167653990?v=4" width="100;" alt="T-Rahul-prabhu-38"/>
