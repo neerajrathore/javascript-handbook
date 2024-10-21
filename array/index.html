@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrays & Loops</title>
-    
+
     <!-- Embedded CSS -->
     <style>
         /* Reset some default styles */
-        body, h1, p {
+        body,
+        h1,
+        p {
             margin: 0;
             padding: 0;
         }
@@ -97,10 +100,26 @@
                 text-align: center;
             }
         }
+
+        /* scroll progress bar css */
+        .progress-bar {
+            position: fixed;
+            width: 100vw;
+            height: 1vh;
+        }
+
+        .filled {
+            width: 0%;
+            height: 100%;
+            background-image: linear-gradient(to right, red, orange);
+        }
     </style>
 </head>
-<body>
 
+<body>
+    <div class="progress-bar">
+        <div class="filled"></div>
+    </div>
     <nav>
         <a href="../index.html" class="back-btn">Go Back ↩</a>
     </nav>
@@ -110,7 +129,8 @@
         <p class="description">
             1. Arrays are used to store multiple values in a single variable.<br>
             2. Loops are useful for executing a block of code multiple times.<br>
-            3. Build a Todo List project to practice manipulating arrays using loops, where you'll be able to add, remove, and render tasks dynamically.
+            3. Build a Todo List project to practice manipulating arrays using loops, where you'll be able to add,
+            remove, and render tasks dynamically.
         </p>
 
         <div class="topics">
@@ -120,6 +140,7 @@
             <a href="./Todo-project/index.html" class="topic-link">Todo Project</a>
         </div>
     </section>
-
+    <script src="../scripts.js"></script>
 </body>
+
 </html>
