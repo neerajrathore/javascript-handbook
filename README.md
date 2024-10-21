@@ -212,15 +212,6 @@ Many thanks to these amazing people :
                 </a>
             </td>
 		</tr>
-        <tr>
-            <td align="center">
-                <a href="https://github.com/shreya-paul-17">
-                    <img src="https://github.com/user-attachments/assets/c5e0950c-a0fb-46ff-9618-156398f15c15" width="100;" alt="shreya-paul-17"/>
-                    <br />
-                    <sub><b>Shreya Paul</b></sub>
-                </a>
-            </td>
-		</tr>
 	<tbody>
 </table>
 <!-- readme: contributors -end -->
