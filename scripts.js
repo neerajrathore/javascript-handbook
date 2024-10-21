@@ -45,6 +45,14 @@ function copyURL() {
 
     showToast("Link copied to clipboard!", 2000); 
 }
+ 
+// scroll progress bar functionality
+const filled = document.querySelector(".filled")
+function update() {
+    filled.style.width = `${(window.scrollY)/ (document.body.scrollHeight - window.innerHeight)*100}%`
+    requestAnimationFrame(update);
+}
+update();
 
 // Back to Top button functionality
 let backToTopBtn = document.getElementById("backToTopBtn");
@@ -63,3 +71,40 @@ backToTopBtn.addEventListener("click", function() {
         behavior: 'smooth'
     });
 });
+
+// Toggle Dark Mode
+
+function toggleDarkMode() {
+    const theme = document.querySelector('body').classList;
+
+    // Check if 'dark-mode' is active
+    if (theme.contains('dark-mode')) {
+      theme.remove('dark-mode');
+      document.querySelector('#themeBtn').innerHTML ="Dark-mode" ;
+      localStorage.setItem('theme', 'light');  // Save light mode in localStorage
+    } else {
+      theme.add('dark-mode');
+      document.querySelector('#themeBtn').innerHTML ="Light-mode" ;
+      localStorage.setItem('theme', 'dark');  // Save dark mode in localStorage
+    }
+  }
+
+  // Function to load the theme from localStorage
+  function loadTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    
+    // Apply the saved theme (if exists) on page load
+    if (savedTheme === 'dark') {
+      document.querySelector('body').classList.add('dark-mode');
+      document.querySelector('#themeBtn').innerHTML ="Light-mode" ;
+    }
+    else {
+        document.querySelector('#themeBtn').innerHTML = "Dark-mode"; // Show option to switch to Dark Mode
+      }
+  }
+
+  // Add event listener for theme button
+  document.getElementById('themeBtn').addEventListener('click', toggleDarkMode);
+
+  // Load the theme from localStorage when the page loads
+  loadTheme();

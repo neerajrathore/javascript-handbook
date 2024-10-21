@@ -26,22 +26,23 @@
 4. [**Closure**](./closure/README.md).
 5. [**Deep & Shallow**](./deep-shallow/README.md).
 6. [**Design patterns**](./design-patterns/README.md).
-7. [**Double and Triple Equal**](./double-equal-and-triple-equal/README.md).
-8. [**Equality Comparison**](./equality-comparison/README.md).
-9. [**Event Listener**](./event-listeners/README.md).
-10. [**Event loop**](./event-loop/README.md).
-11. [**High order function**](./high-order-function/README.md).
-12. [**Hoisting**](./hoisting/README.md).
-13. [**Local and Session Storage**](./local-and-session-storage/README.md).
-14. [**Promise**](./promise/README.md).
-15. [**Property flags and descriptors**](./property-flags-and-descriptors/README.md).
-16. [**Prototype**](./prototype/README.md).
-17. [**Try & Catch**](./try-catch/README.md).
-18. [**var & let & const**](./var-let-const/README.md).
-19. [**Variable Scoping**](./variable-scoping/README.md).
-20. [**JavaScript Callback**](./callback/README.md).
-21. [**JavaScript Debounced Search**](./debouncing/README.md).
-22. [**JavaScript Interview Questions**](./interview-questions/README.md).
+7. [**Document Object Model**](./document-object-model/README.md).
+8. [**Double and Triple Equal**](./double-equal-and-triple-equal/README.md).
+9. [**Equality Comparison**](./equality-comparison/README.md).
+10. [**Event Listener**](./event-listeners/README.md).
+11. [**Event loop**](./event-loop/README.md).
+12. [**High order function**](./high-order-function/README.md).
+13. [**Hoisting**](./hoisting/README.md).
+14. [**Local and Session Storage**](./local-and-session-storage/README.md).
+15. [**Promise**](./promise/README.md).
+16. [**Property flags and descriptors**](./property-flags-and-descriptors/README.md).
+17. [**Prototype**](./prototype/README.md).
+18. [**Try & Catch**](./try-catch/README.md).
+19. [**var & let & const**](./var-let-const/README.md).
+20. [**Variable Scoping**](./variable-scoping/README.md).
+21. [**JavaScript Callback**](./callback/README.md).
+22. [**JavaScript Debounced Search**](./debouncing/README.md).
+23. [**JavaScript Interview Questions**](./interview-questions/README.md).
 
 ## Hacktoberfest 2024 ✨
 
@@ -151,40 +152,26 @@ Many thanks to these amazing people :
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/bhaavvya">
-                    <img src="https://avatars.githubusercontent.com/u/110487270?v=4" width="100;" alt="bhaavvya"/>
+                <a href="https://github.com/T-Rahul-prabhu-38">
+                    <img src="https://avatars.githubusercontent.com/u/167653990?v=4" width="100;" alt="T-Rahul-prabhu-38"/>
                     <br />
-                    <sub><b>Bhavya</b></sub>
+                    <sub><b>t rahul prabhu</b></sub>
                 </a>
             </td>
 		</tr>
 		<tr>
             <td align="center">
-                <a href="https://github.com/DhanushNehru">
-                    <img src="https://avatars.githubusercontent.com/u/22955675?v=4" width="100;" alt="DhanushNehru"/>
+                <a href="https://github.com/shreya-paul-17">
+                    <img src="https://avatars.githubusercontent.com/u/135226069?v=4" width="100;" alt="shreya-paul-17"/>
                     <br />
-                    <sub><b>Dhanush </b></sub>
+                    <sub><b>Shreya Paul</b></sub>
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/Shinu-ster">
-                    <img src="https://avatars.githubusercontent.com/u/122474221?v=4" width="100;" alt="Shinu-ster"/>
+                <a href="https://github.com/guruprasath-v">
+                    <img src="https://avatars.githubusercontent.com/u/138384576?v=4" width="100;" alt="guruprasath-v"/>
                     <br />
-                    <sub><b>Sajat Bajracharya</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/ajayvaniya0">
-                    <img src="https://avatars.githubusercontent.com/u/131126584?v=4" width="100;" alt="ajayvaniya0"/>
-                    <br />
-                    <sub><b>Ajay Vaniya</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/ArpitCS">
-                    <img src="https://avatars.githubusercontent.com/u/133118520?v=4" width="100;" alt="ArpitCS"/>
-                    <br />
-                    <sub><b>ArpitCS</b></sub>
+                    <sub><b>Guruprasath</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -195,19 +182,54 @@ Many thanks to these amazing people :
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/guruprasath-v">
-                    <img src="https://avatars.githubusercontent.com/u/138384576?v=4" width="100;" alt="guruprasath-v"/>
+                <a href="https://github.com/ArpitCS">
+                    <img src="https://avatars.githubusercontent.com/u/133118520?v=4" width="100;" alt="ArpitCS"/>
                     <br />
-                    <sub><b>Guruprasath</b></sub>
+                    <sub><b>ArpitCS</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ajayvaniya0">
+                    <img src="https://avatars.githubusercontent.com/u/131126584?v=4" width="100;" alt="ajayvaniya0"/>
+                    <br />
+                    <sub><b>Ajay Vaniya</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Shinu-ster">
+                    <img src="https://avatars.githubusercontent.com/u/122474221?v=4" width="100;" alt="Shinu-ster"/>
+                    <br />
+                    <sub><b>Sajat Bajracharya</b></sub>
                 </a>
             </td>
 		</tr>
 		<tr>
             <td align="center">
-                <a href="https://github.com/T-Rahul-prabhu-38">
-                    <img src="https://avatars.githubusercontent.com/u/167653990?v=4" width="100;" alt="T-Rahul-prabhu-38"/>
+                <a href="https://github.com/Madhavbansal27">
+                    <img src="https://avatars.githubusercontent.com/u/99018349?v=4" width="100;" alt="Madhavbansal27"/>
                     <br />
-                    <sub><b>t rahul prabhu</b></sub>
+                    <sub><b>Madhavbansal27</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/DhanushNehru">
+                    <img src="https://avatars.githubusercontent.com/u/22955675?v=4" width="100;" alt="DhanushNehru"/>
+                    <br />
+                    <sub><b>Dhanush </b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/bhaavvya">
+                    <img src="https://avatars.githubusercontent.com/u/110487270?v=4" width="100;" alt="bhaavvya"/>
+                    <br />
+                    <sub><b>Bhavya</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/AADESHak007">
+                    <img src="https://avatars.githubusercontent.com/u/123197632?v=4" width="100;" alt="AADESHak007"/>
+                    <br />
+                    <sub><b>Aadesh_Kumar</b></sub>
                 </a>
             </td>
 		</tr>
