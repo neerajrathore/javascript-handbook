@@ -63,6 +63,20 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     color: white !important;
 }
 
+/* scroll progress bar css */
+.progress-bar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 1vh;
+    z-index: 100;
+}
+.filled{
+    width: 0%;
+    height: 100%;
+    background-image: linear-gradient(to right, red, orange);
+}
 header {
     background-color: #ffdee3;
     border-left: 6px solid #ff4081;

@@ -45,6 +45,14 @@ function copyURL() {
 
     showToast("Link copied to clipboard!", 2000); 
 }
+ 
+// scroll progress bar functionality
+const filled = document.querySelector(".filled")
+function update() {
+    filled.style.width = `${(window.scrollY)/ (document.body.scrollHeight - window.innerHeight)*100}%`
+    requestAnimationFrame(update);
+}
+update();
 
 // Back to Top button functionality
 let backToTopBtn = document.getElementById("backToTopBtn");
