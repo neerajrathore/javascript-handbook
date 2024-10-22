@@ -16,6 +16,10 @@
 
 </div>
 
+<h3 align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
+</h3>
+
 ## Overview
 *This JavaScript handbook offers a comprehensive introduction of various concepts in JavaScript. Whether you're a beginner or an experienced developer, this handbook will guide you through the world of JavaScript using clear explanations and well-commented code examples*
 
@@ -44,6 +48,12 @@
 22. [**JavaScript Debounced Search**](./debouncing/README.md).
 23. [**JavaScript Interview Questions**](./interview-questions/README.md).
 
+## Contributing
+If you are looking to contribute, please refer to the [**Contributing Guide**](https://github.com/neerajrathore/javascript-handbook/blob/main/CONTRIBUTING.md).
+
+## 🌟 Support
+If there are any questions pertaining to the project itself (usage or implementation wise), you may create an [**issue**](https://github.com/neerajrathore/javascript-handbook/issues), reach out on [**discord**](https://discord.gg/HCbYKCD6).
+
 ## Hacktoberfest 2024 ✨
 
 **This project is participating in [Hacktoberfest 2024](https://hacktoberfest.com/)!**
@@ -65,7 +75,11 @@ We welcome contributions from the open-source community, by adding of new javasc
 To copy the link manually, here is the URL:  
 `https://neerajrathore.github.io/javascript-handbook/`
 
-## Contributors 🌎
+### 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/neerajrathore/javascript-handbook?tab=MIT-1-ov-file) file for details.
+
+## Contributors 🤝
 
 Many thanks to these amazing people :
 <!-- readme: contributors -start -->
