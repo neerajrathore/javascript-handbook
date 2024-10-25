@@ -240,6 +240,13 @@ Many thanks to these amazing people :
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/Arushi-N4">
+                    <img src="https://avatars.githubusercontent.com/u/145531852?v=4" width="100;" alt="Arushi-N4"/>
+                    <br />
+                    <sub><b>Arushi Nirala</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/AADESHak007">
                     <img src="https://avatars.githubusercontent.com/u/123197632?v=4" width="100;" alt="AADESHak007"/>
                     <br />
