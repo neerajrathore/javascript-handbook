@@ -108,3 +108,8 @@ function toggleDarkMode() {
 
   // Load the theme from localStorage when the page loads
   loadTheme();
+
+ function toggleMenu() {
+    const navMenu = document.getElementById("nav-menu");
+    navMenu.classList.toggle("active");
+  }
