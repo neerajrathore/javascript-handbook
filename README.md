@@ -101,17 +101,17 @@ Many thanks to these amazing people :
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/lord-cyclone100">
-                    <img src="https://avatars.githubusercontent.com/u/121711381?v=4" width="100;" alt="lord-cyclone100"/>
-                    <br />
-                    <sub><b>Sangneel Deb</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/Ashish93-mrx">
                     <img src="https://avatars.githubusercontent.com/u/76056451?v=4" width="100;" alt="Ashish93-mrx"/>
                     <br />
                     <sub><b>Ashish N M</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/lord-cyclone100">
+                    <img src="https://avatars.githubusercontent.com/u/121711381?v=4" width="100;" alt="lord-cyclone100"/>
+                    <br />
+                    <sub><b>Sangneel Deb</b></sub>
                 </a>
             </td>
             <td align="center">
