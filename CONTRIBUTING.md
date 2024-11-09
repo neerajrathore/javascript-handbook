@@ -10,7 +10,6 @@ We’re excited that you’re interested in contributing to JavaScript Handbook!
 - **Respectful Collaboration**: Be professional and respectful in all interactions.
 - **Stay Updated**: If any changes are requested during the review, please make them promptly.
 - **Documentation**: Update documentation if your changes affect usage or functionality.
-- **Hacktoberfest**: If you're contributing for Hacktoberfest, make sure your PR gets labeled `hacktoberfest-accepted` after it's reviewed and merged.
 
 ## How to Contribute 🤔
 

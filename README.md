@@ -37,16 +37,17 @@
 11. [**Event loop**](./event-loop/README.md).
 12. [**High order function**](./high-order-function/README.md).
 13. [**Hoisting**](./hoisting/README.md).
-14. [**Local and Session Storage**](./local-and-session-storage/README.md).
-15. [**Promise**](./promise/README.md).
-16. [**Property flags and descriptors**](./property-flags-and-descriptors/README.md).
-17. [**Prototype**](./prototype/README.md).
-18. [**Try & Catch**](./try-catch/README.md).
-19. [**var & let & const**](./var-let-const/README.md).
-20. [**Variable Scoping**](./variable-scoping/README.md).
-21. [**JavaScript Callback**](./callback/README.md).
-22. [**JavaScript Debounced Search**](./debouncing/README.md).
-23. [**JavaScript Interview Questions**](./interview-questions/README.md).
+14. [**Iterators and Generators**](./iterators-generators/README.md).
+15. [**Local and Session Storage**](./local-and-session-storage/README.md).
+16. [**Promise**](./promise/README.md).
+17. [**Property flags and descriptors**](./property-flags-and-descriptors/README.md).
+18. [**Prototype**](./prototype/README.md).
+19. [**Try & Catch**](./try-catch/README.md).
+20. [**var & let & const**](./var-let-const/README.md).
+21. [**Variable Scoping**](./variable-scoping/README.md).
+22. [**JavaScript Callback**](./callback/README.md).
+23. [**JavaScript Debounced Search**](./debouncing/README.md).
+24. [**JavaScript Interview Questions**](./interview-questions/README.md).
 
 ## Contributing
 If you are looking to contribute, please refer to the [**Contributing Guide**](https://github.com/neerajrathore/javascript-handbook/blob/main/CONTRIBUTING.md).
@@ -54,16 +55,8 @@ If you are looking to contribute, please refer to the [**Contributing Guide**](h
 ## 🌟 Support
 If there are any questions pertaining to the project itself (usage or implementation wise), you may create an [**issue**](https://github.com/neerajrathore/javascript-handbook/issues), reach out on [**discord**](https://discord.gg/HCbYKCD6).
 
-## Hacktoberfest 2024 ✨
-
-**This project is participating in [Hacktoberfest 2024](https://hacktoberfest.com/)!**
-
-We welcome contributions from the open-source community, by adding of new javascript topics or enhancements to the documentation. Every contribution counts toward your Hacktoberfest goal.
-
-### How to Contribute
-1. **Fork this repository** and create a new branch.
-2. **Find an issue** to work on, or propose a new feature by opening an issue.
-3. **Submit your pull request** before October 31st to make it count for Hacktoberfest!
+## Contribute 🤝
+Please refer to the [**Contributing Guide**](https://github.com/neerajrathore/javascript-handbook/blob/main/CONTRIBUTING.md). 
 
 ## Share this Handbook 📣
 
@@ -78,186 +71,5 @@ To copy the link manually, here is the URL:
 ### 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/neerajrathore/javascript-handbook?tab=MIT-1-ov-file) file for details.
-
-## Contributors 🤝
-
-Many thanks to these amazing people :
-<!-- readme: contributors -start -->
-<table>
-	<tbody>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/neerajrathore">
-                    <img src="https://avatars.githubusercontent.com/u/11667917?v=4" width="100;" alt="neerajrathore"/>
-                    <br />
-                    <sub><b>Neeraj Rathore</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/yashksaini-coder">
-                    <img src="https://avatars.githubusercontent.com/u/115717039?v=4" width="100;" alt="yashksaini-coder"/>
-                    <br />
-                    <sub><b>Yash Kumar Saini</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Ashish93-mrx">
-                    <img src="https://avatars.githubusercontent.com/u/76056451?v=4" width="100;" alt="Ashish93-mrx"/>
-                    <br />
-                    <sub><b>Ashish N M</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/lord-cyclone100">
-                    <img src="https://avatars.githubusercontent.com/u/121711381?v=4" width="100;" alt="lord-cyclone100"/>
-                    <br />
-                    <sub><b>Sangneel Deb</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/devp299">
-                    <img src="https://avatars.githubusercontent.com/u/170864478?v=4" width="100;" alt="devp299"/>
-                    <br />
-                    <sub><b>devp299</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/THE-ASHUTOSH">
-                    <img src="https://avatars.githubusercontent.com/u/82095076?v=4" width="100;" alt="THE-ASHUTOSH"/>
-                    <br />
-                    <sub><b>Ashutosh Kumar</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/suryanshsingh2001">
-                    <img src="https://avatars.githubusercontent.com/u/80690023?v=4" width="100;" alt="suryanshsingh2001"/>
-                    <br />
-                    <sub><b>Suryansh Singh</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/sujanrupu">
-                    <img src="https://avatars.githubusercontent.com/u/103595490?v=4" width="100;" alt="sujanrupu"/>
-                    <br />
-                    <sub><b>Sujan Ghosh</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/sajalgarg45">
-                    <img src="https://avatars.githubusercontent.com/u/144695016?v=4" width="100;" alt="sajalgarg45"/>
-                    <br />
-                    <sub><b>Sajal Garg</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/mohitahlawat2001">
-                    <img src="https://avatars.githubusercontent.com/u/65100859?v=4" width="100;" alt="mohitahlawat2001"/>
-                    <br />
-                    <sub><b>Mohit ahlawat</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Bharath-KumarReddy">
-                    <img src="https://avatars.githubusercontent.com/u/127650446?v=4" width="100;" alt="Bharath-KumarReddy"/>
-                    <br />
-                    <sub><b>Bharath-KumarReddy</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/T-Rahul-prabhu-38">
-                    <img src="https://avatars.githubusercontent.com/u/167653990?v=4" width="100;" alt="T-Rahul-prabhu-38"/>
-                    <br />
-                    <sub><b>t rahul prabhu</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/shreya-paul-17">
-                    <img src="https://avatars.githubusercontent.com/u/135226069?v=4" width="100;" alt="shreya-paul-17"/>
-                    <br />
-                    <sub><b>Shreya Paul</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/guruprasath-v">
-                    <img src="https://avatars.githubusercontent.com/u/138384576?v=4" width="100;" alt="guruprasath-v"/>
-                    <br />
-                    <sub><b>Guruprasath</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/chaitanya-bhargava">
-                    <img src="https://avatars.githubusercontent.com/u/97454068?v=4" width="100;" alt="chaitanya-bhargava"/>
-                    <br />
-                    <sub><b>Chaitanya Bhargava</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/ArpitCS">
-                    <img src="https://avatars.githubusercontent.com/u/133118520?v=4" width="100;" alt="ArpitCS"/>
-                    <br />
-                    <sub><b>ArpitCS</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/ajayvaniya0">
-                    <img src="https://avatars.githubusercontent.com/u/131126584?v=4" width="100;" alt="ajayvaniya0"/>
-                    <br />
-                    <sub><b>Ajay Vaniya</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Shinu-ster">
-                    <img src="https://avatars.githubusercontent.com/u/122474221?v=4" width="100;" alt="Shinu-ster"/>
-                    <br />
-                    <sub><b>Sajat Bajracharya</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/Madhavbansal27">
-                    <img src="https://avatars.githubusercontent.com/u/99018349?v=4" width="100;" alt="Madhavbansal27"/>
-                    <br />
-                    <sub><b>Madhavbansal27</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/DhanushNehru">
-                    <img src="https://avatars.githubusercontent.com/u/22955675?v=4" width="100;" alt="DhanushNehru"/>
-                    <br />
-                    <sub><b>Dhanush </b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/bhaavvya">
-                    <img src="https://avatars.githubusercontent.com/u/110487270?v=4" width="100;" alt="bhaavvya"/>
-                    <br />
-                    <sub><b>Bhavya</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Arushi-N4">
-                    <img src="https://avatars.githubusercontent.com/u/145531852?v=4" width="100;" alt="Arushi-N4"/>
-                    <br />
-                    <sub><b>Arushi Nirala</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/AADESHak007">
-                    <img src="https://avatars.githubusercontent.com/u/123197632?v=4" width="100;" alt="AADESHak007"/>
-                    <br />
-                    <sub><b>Aadesh_Kumar</b></sub>
-                </a>
-            </td>
-		</tr>
-	<tbody>
-</table>
-<!-- readme: contributors -end -->
-
-Happy Contributing! 🚀
 
 **[⬆ back to top](#table-of-contents)**
