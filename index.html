@@ -8,28 +8,26 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body class="">
     <div class="progress-bar">
         <div class="filled"></div>
     </div>
     <header>
         <h1><img src="JavaScript-logo.png" alt="JS pic"> JavaScript Handbook</h1>
-      <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <nav>
-    <ul id="nav-menu">
-        <li><a href="#share">Home</a></li>
-      <li><a href="#introduction">Introduction</a></li>
+        <div class="hamburger" onclick="toggleMenu()">
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#share">Home</a></li>
+                <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#topics">Topics</a></li>
                 <li><a href="#share">Share</a></li>
                 <li><a href="#contact" class="Hover">Contact Us<i class="fa-solid fa-user" class="Hover"></i></a></li>
                 <li><button id="themeBtn">Toggle</button></li>
-    </ul>
-  </nav>
-                
+            </ul>
+        </nav>
+
     </header>
     <Section class="txt">
         <span>Let's Get Starts</span>
@@ -37,9 +35,13 @@
         <br>
         <h2>Learn With Us.</h2>
         <br>
-        <a href="#"> Follow your Passion</a>
+        <a href="#">Search for topic</a>
+        <div class="search-container">
+            <input type="text" id="search-topics-input" oninput="dataListItemClick()" list="js-topics" placeholder="Search..."/>
+            <datalist id="js-topics"></datalist>
+        </div>
     </Section>
-    <main>
+    <main id="intro-topics">
         <section id="introduction">
             <h2>Introduction</h2>
             <p>JavaScript is a versatile language used for both frontend and backend development...</p>
@@ -47,34 +49,31 @@
 
         <section id="topics">
             <!-- <h2>Key JavaScript Concepts</h2> -->
-            <div id="sub-topic">
+            <div id="js-basics-container">
                 <h2>1. JavaScript Basics</h2>
                 <div class="card-container">
                     <div class="card"><a href="./var-let-const/index.html">var, let & const</a></div>
                     <div class="card"><a href="./variable-scoping/index.html">Variable Scoping</a></div>
-                    <div class="card"><a href="./double-equal-and-triple-equal/index.html">Double and Triple Equals</a>
-                    </div>
+                    <div class="card"><a href="./double-equal-and-triple-equal/index.html">Double and Triple Equals</a></div>
                     <div class="card"><a href="./equality-comparison/index.html">Equality Comparison</a></div>
                     <div class="card"><a href="./array/index.html">Array</a></div>
-                    <div class="card"><a href="./destructuring-and-rest-spread/index.html">Destructing and
-                            Rest/Spread</a></div>
+                    <div class="card"><a href="./destructuring-and-rest-spread/index.html">Destructing and Rest/Spread</a></div>
                     <div class="card"><a href="./hoisting/index.html">Hoisting</a></div>
                     <div class="card"><a href="./iterators-generators/index.html">Iterators and Generators</a></div>
                 </div>
             </div>
 
-            <div id="sub-topic">
+            <div id="oop-js-container">
                 <h2>2. Object-Oriented JavaScript (OOP)</h2>
                 <div class="card-container">
                     <div class="card"><a href="./class/index.html">Class</a></div>
                     <div class="card"><a href="./prototype/index.html">Prototype</a></div>
-                    <div class="card"><a href="./property-flags-and-descriptors/index.html">Property Flags &
-                            Descriptors</a></div>
+                    <div class="card"><a href="./property-flags-and-descriptors/index.html">Property Flags and Descriptors</a></div>
                     <div class="card"><a href="./document-object-model/index.html">Document Object Model(DOM)</a></div>
                 </div>
             </div>
 
-            <div id="sub-topic">
+            <div id="async-js-container">
                 <h2>3. Asynchronous JavaScript</h2>
                 <div class="card-container">
                     <div class="card"><a href="./async-javascript/index.html">Async JavaScript</a></div>
@@ -85,7 +84,7 @@
                 </div>
             </div>
 
-            <div id="sub-topic">
+            <div id="advanced-js-container">
                 <h2>4. Advanced Functions & Concepts</h2>
                 <div class="card-container">
                     <div class="card"><a href="./closure/index.html">Closure</a></div>
@@ -96,35 +95,35 @@
                 </div>
             </div>
 
-            <div id="sub-topic">
+            <div id="browser-api-container">
                 <h2>5. Browser API & Storage</h2>
                 <div class="card-container">
                     <div class="card"><a href="./local-and-session-storage/index.html">Local & Session Storage</a></div>
                 </div>
             </div>
 
-            <div id="sub-topic">
+            <div id="comparison-evaluation-container">
                 <h2>6. Comparison & Evaluation</h2>
                 <div class="card-container">
                     <div class="card"><a href="./deep-shallow/index.html">Deep & Shallow</a></div>
                 </div>
             </div>
 
-            <div id="sub-topic">
+            <div id="event-handling-container">
                 <h2>7. Event Handling</h2>
                 <div class="card-container">
                     <div class="card"><a href="./event-listeners/index.html">Event Listener</a></div>
                 </div>
             </div>
 
-            <div id="sub-topic">
+            <div id="interview-prep-container">
                 <h2>8. Interview Preparation</h2>
                 <div class="card-container">
                     <div class="card"><a href="./interview-questions/index.html">Interview Questions</a></div>
                 </div>
             </div>
 
-            <div id="sub-topic">
+            <div id="design-patterns-container">
                 <h2>9. JavaScript Design Patterns & Best Practices</h2>
                 <div class="card-container">
                     <div class="card"><a href="./design-patterns/index.html">Design Patterns</a></div>
@@ -182,100 +181,99 @@
             </form>
         </div>
     </section>
-    </main>
-    <button id="backToTopBtn">Back to Top</button>
-<!-------testimonial---->
     
-<div class="rev-container">
-    <h2>Testimonial</h2>
-     <div class="review-container">
-     <h1> Review from our client</h1>
-     <div class="rating-container">
-         <span class="rating">4.5/5</span>
-         <span class="stars">
-           <span class="star" data-value="1">★</span>
-           <span class="star" data-value="2">★</span>
-           <span class="star" data-value="3">★</span>
-           <span class="star" data-value="4">★</span>
-           <span class="star" data-value="5">★</span>
-       
-         </span>
-         <span class="reviews">10 reviews</span>
-     </div>
-     <div class="reviews-container">
-         <!-- Review 1 -->
-         <div class="review-box">
-             <h4>JOHN DOE</h4>
-             <div class="review-content">
-                 <span class="name">John Doe</span>
-                 <span class="comment">"easy  to learn and understand"</span>
-                 <div class="stars" id="stars">
-                   <span class="star" data-value="1">★</span>
-                   <span class="star" data-value="2">★</span>
-                   <span class="star" data-value="3">★</span>
-                   <span class="star" data-value="4">★</span>
-                   <span class="star" data-value="5">★</span>
-               
-               </div>
-             </div>
-         </div>
-         <!-- Review 2 -->
-         <div class="review-box">
-             <h4>JANE SMITH</h4>
-             <div class="review-content">
-                 <span class="name">Jane Smith</span>
-                 <span class="comment">" Highly recommend!"</span>
-                 <div class="stars" id="stars">
-                   <span class="star" data-value="1">★</span>
-                   <span class="star" data-value="2">★</span>
-                   <span class="star" data-value="3">★</span>
-                   <span class="star" data-value="4">★</span>
-                   <span class="star" data-value="5">★</span>
-               
-               </div>
-             </div>
-         </div>
-         <!-- Review 3 -->
-         <div class="review-box">
-             <h4>JohnSon</h4>
-             <div class="review-content">
-                 <span class="name"> JOHNSON</span>
-                 <span class="comment">"very Good content it is really very helpful"</span>
-                 
-                   <div class="stars" id="stars">
-                     <span class="star" data-value="1">★</span>
-                     <span class="star" data-value="2">★</span>
-                     <span class="star" data-value="3">★</span>
-                     <span class="star" data-value="4">★</span>
-                     <span class="star" data-value="5">★</span>
-                 
-                 </div>
-             </div>
-         </div>
-     </div>
-     <!----review add-->
-     <div class="container-review">
-         <h1>Testimonial here</h1>
-         <div class="rating">
-             <span id="rating">0</span>/5
-         </div>
-         <div class="stars" id="stars">
-             <span class="star" data-value="1">★</span>
-             <span class="star" data-value="2">★</span>
-             <span class="star" data-value="3">★</span>
-             <span class="star" data-value="4">★</span>
-             <span class="star" data-value="5">★</span>
-         </div>
-         <p>Share your review:</p>
-         <textarea id="review"
-                 placeholder="Write your review here">
+    <button id="backToTopBtn">Back to Top</button>
+    <!-------testimonial---->
+
+    <div class="rev-container">
+        <h2>Testimonial</h2>
+        <div class="review-container">
+            <h1> Review from our client</h1>
+            <div class="rating-container">
+                <span class="rating">4.5/5</span>
+                <span class="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+
+                </span>
+                <span class="reviews">10 reviews</span>
+            </div>
+            <div class="reviews-container">
+                <!-- Review 1 -->
+                <div class="review-box">
+                    <h4>JOHN DOE</h4>
+                    <div class="review-content">
+                        <span class="name">John Doe</span>
+                        <span class="comment">"easy to learn and understand"</span>
+                        <div class="stars" id="stars">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="review-box">
+                    <h4>JANE SMITH</h4>
+                    <div class="review-content">
+                        <span class="name">Jane Smith</span>
+                        <span class="comment">" Highly recommend!"</span>
+                        <div class="stars" id="stars">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="review-box">
+                    <h4>JohnSon</h4>
+                    <div class="review-content">
+                        <span class="name"> JOHNSON</span>
+                        <span class="comment">"very Good content it is really very helpful"</span>
+
+                        <div class="stars" id="stars">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----review add-->
+            <div class="container-review">
+                <h1>Testimonial here</h1>
+                <div class="rating">
+                    <span id="rating">0</span>/5
+                </div>
+                <div class="stars" id="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <p>Share your review:</p>
+                <textarea id="review" placeholder="Write your review here">
          </textarea>
-         <button id="submit">Submit</button>
-         <div class="reviews" id="reviews">
-         </div>
-     </div>
- 
-     <script src="scripts.js"></script>
+                <button id="submit">Submit</button>
+                <div class="reviews" id="reviews">
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="scripts.js"></script>
 </body>
 

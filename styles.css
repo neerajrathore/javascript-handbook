@@ -1,3 +1,9 @@
+/* css variables*/
+:root {
+    --primary-color: #00ffcc;
+    --code-bg-color: #414449;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,51 +24,77 @@ body {
     padding-bottom: 5px;
     margin-left: 15px;
 }
-.txt{
+
+.txt {
     max-width: 650px;
     position: absolute;
-    top:50%;
-    left:30%;
-    right:30%;
-    transform: translate(-50,-50);
+    top: 50%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-50, -50);
     text-align: center;
     color: white;
     justify-content: center;
 }
-.txt span{
+
+.txt span {
     letter-spacing: 5px;
-    
+
 }
-.txt h3{
+
+.txt h3 {
     font-size: 2.1em;
 }
-.txt h2{
+
+.txt h2 {
     font-size: 2.8em;
     color: rgb(238, 237, 250);
 }
-.txt a{
+
+.txt a {
     text-decoration: none;
     background: yellow;
     color: rgb(16, 7, 82);
     padding: 10px 20px;
     letter-spacing: 5px;
 }
+
+.txt input {
+    align-self: center;
+    height: 2.5rem;
+    width: 99%;
+    background-color: lightyellow;
+    color: #272a2f;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    /* Center the search bar */
+    border: 1px solid var(--code-bg-color);
+    border-radius: 5px;
+}
+
+.txt input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: #272a2f;
+}
+
 .dark-mode {
     /* background: rgb(42,54,74);
 background: linear-gradient(0deg, rgba(42,54,74,1) 0%, rgba(42,54,74,1) 31%); */
-background-color: rgb(30, 29, 29);
+    background-color: rgb(30, 29, 29);
     color: white;
 }
 
 .dark-mode h2 {
     background: #CFE7FA;
-background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-    
+    background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     /* color:white; */
-    
-    
+
+
 }
 
 .dark-mode nav {
@@ -74,9 +106,9 @@ background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
 }
 
 .dark-mode .hamburger div {
-      width: 25px;
-      height: 3px;
-      background-color: #fff;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
 }
 
 .dark-mode header {
@@ -85,13 +117,13 @@ background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
 }
 
 .dark-mode .card {
-    background: rgb(19,120,157);
-    background: linear-gradient(0deg, rgba(19,120,157,1) 0%, rgba(28,103,130,1) 61%);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 0px );
--webkit-backdrop-filter: blur( 0px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgb(19, 120, 157);
+    background: linear-gradient(0deg, rgba(19, 120, 157, 1) 0%, rgba(28, 103, 130, 1) 61%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .dark-mode .card a {
@@ -101,15 +133,17 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .dark-mode .contact-card {
     background-color: black;
 }
-.dark-mode .review-container{
+
+.dark-mode .review-container {
     color: rgb(14, 13, 13) !important;
 }
+
 .dark-mode .form-group label {
     color: white !important;
 }
 
 /* scroll progress bar css */
-.progress-bar{
+.progress-bar {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -117,18 +151,21 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     height: 1vh;
     z-index: 100;
 }
-.filled{
+
+.filled {
     width: 0%;
     height: 100%;
     background-image: linear-gradient(to right, red, orange);
 }
+
 header {
-    
+
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(66, 34, 147, 0.7),rgba(168, 16, 151, 0.7)), url("js.jpg");
+    background-image: linear-gradient(rgba(66, 34, 147, 0.7), rgba(168, 16, 151, 0.7)), url("js.jpg");
     background-size: cover;
 }
+
 header img {
     height: 60px;
     width: 60px;
@@ -166,16 +203,16 @@ header h1 img {
 
 nav {
     margin: 0rem 0rem 0rem;
-    
-        width: 100%;
-        height: 100px;
-        background-color: rgb(23, 35, 99);
-        color: white;
-         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        
-    
+
+    width: 100%;
+    height: 100px;
+    background-color: rgb(23, 35, 99);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
 }
 
 nav ul {
@@ -515,56 +552,57 @@ button:hover {
     }
 }
 
-    /* Hamburger Icon */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-    
-    .hamburger div {
-      width: 25px;
-      height: 3px;
-      background-color: #000;
-      margin: 5px 0;
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+}
+
+/* Media Query for Responsive Design nav-bar*/
+@media (max-width: 950px) {
+
+    nav {
+        width: 90%;
     }
 
-    /* Media Query for Responsive Design nav-bar*/
-    @media (max-width: 950px) {
-      
-      nav {
-             width: 90%;
-      }
-      
-      .dark-mode nav ul{
-          background-color: #000;
-      }
-      
-      nav ul {
+    .dark-mode nav ul {
+        background-color: #000;
+    }
+
+    nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
         padding: 15px 0px;
         background-color: #fbb6c1;
-      }
-      
-      nav ul li{
-        padding:4px 0px;
-      }
+    }
 
-      .hamburger {
-       display:flex;
-        flex-direction:column;
-        align-items:left;
-        margin-right:85%;
-      }
-      
-      nav ul.active {
+    nav ul li {
+        padding: 4px 0px;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-right: 85%;
+    }
+
+    nav ul.active {
         display: flex;
         color: #dadada;
-      }
+    }
 }
-.rev-container  .title {
+
+.rev-container .title {
     display: flex;
     position: relative;
     top: 0;
@@ -582,15 +620,16 @@ button:hover {
     text-align: center;
     color: #272341;
     letter-spacing: 0.5px;
-   
-  }
-  body {
+
+}
+
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  .review-container {
+}
+
+.review-container {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
@@ -598,46 +637,54 @@ button:hover {
     border: 1px solid #979393;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 2px solid #ff4081;
-    border-radius: 12px ;
-  }
-  
-  .rating-container {
+    border-radius: 12px;
+}
+
+.rating-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
-  
-  #stars {
+}
+
+#stars {
     font-size: 24px;
     font-weight: bold;
     color: rgb(153, 3, 60);
     margin-right: 10px;
-  }
-  
-  .stars {
-    color: #1a0751;
-        margin-right:10px;
-    }
-    .container-review {
-        background-color: #ffbcd9;
-        padding: 80px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(136, 137, 143, 0.912);
-        text-align: center;
-        justify-content: space-between;
-    }
-    
-    h1 {
-        font-size: 20px;
-        margin: 20px 5px 5px 5px;
-    }
-    #review{
-        background-color: #ffebee;
-        color: #220756;
-    }
-    #submit{
-        color:#04042e;
-        background-color: #e91e67 ;
-    }
-    
+}
 
+.stars {
+    color: #1a0751;
+    margin-right: 10px;
+}
+
+.container-review {
+    background-color: #ffbcd9;
+    padding: 80px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(136, 137, 143, 0.912);
+    text-align: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 20px 5px 5px 5px;
+}
+
+#review {
+    background-color: #ffebee;
+    color: #220756;
+}
+
+#submit {
+    color: #04042e;
+    background-color: #e91e67;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: #272a2f;
+}
