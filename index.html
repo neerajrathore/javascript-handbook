@@ -14,7 +14,7 @@
         <div class="filled"></div>
     </div>
     <header>
-        <h1><img src="JavaScript-logo.png" alt="JS pic"> JavaScript Handbook</h1>
+        <!-- <h1><img src="JavaScript-logo.png" alt="JS pic"> JavaScript Handbook</h1> -->
         <div class="hamburger" onclick="toggleMenu()">
         </div>
         <nav>
@@ -28,19 +28,16 @@
             </ul>
         </nav>
 
+        <Section class="txt">
+            <h2>Welcome to JavaScript HandBook</h2>
+            <br>
+            <a href="#">Search for topic</a>
+            <div class="search-container">
+                <input type="text" id="search-topics-input" oninput="dataListItemClick()" list="js-topics" placeholder="Search..."/>
+                <datalist id="js-topics"></datalist>
+            </div>
+        </Section>
     </header>
-    <Section class="txt">
-        <span>Let's Get Starts</span>
-        <h3>"Welcome to JavaScript HandBook"</h3>
-        <br>
-        <h2>Learn With Us.</h2>
-        <br>
-        <a href="#">Search for topic</a>
-        <div class="search-container">
-            <input type="text" id="search-topics-input" oninput="dataListItemClick()" list="js-topics" placeholder="Search..."/>
-            <datalist id="js-topics"></datalist>
-        </div>
-    </Section>
     <main id="intro-topics">
         <section id="introduction">
             <h2>Introduction</h2>

@@ -37,10 +37,9 @@ body {
     justify-content: center;
 }
 
-.txt span {
+/* .txt span {
     letter-spacing: 5px;
-
-}
+} */
 
 .txt h3 {
     font-size: 2.1em;
@@ -49,6 +48,7 @@ body {
 .txt h2 {
     font-size: 2.8em;
     color: rgb(238, 237, 250);
+    letter-spacing: 2px
 }
 
 .txt a {
@@ -91,10 +91,7 @@ background: linear-gradient(0deg, rgba(42,54,74,1) 0%, rgba(42,54,74,1) 31%); */
     background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     /* color:white; */
-
-
 }
 
 .dark-mode nav {
@@ -112,8 +109,8 @@ background: linear-gradient(0deg, rgba(42,54,74,1) 0%, rgba(42,54,74,1) 31%); */
 }
 
 .dark-mode header {
-    background: rgb(46, 43, 44);
-    background: linear-gradient(0deg, rgba(46, 43, 44, 1) 0%, rgba(27, 26, 30, 1) 100%);
+    /* background: rgb(46, 43, 44);
+    background: linear-gradient(0deg, rgba(46, 43, 44, 1) 0%, rgba(27, 26, 30, 1) 100%); */
 }
 
 .dark-mode .card {
@@ -159,7 +156,6 @@ background: linear-gradient(0deg, rgba(42,54,74,1) 0%, rgba(42,54,74,1) 31%); */
 }
 
 header {
-
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(66, 34, 147, 0.7), rgba(168, 16, 151, 0.7)), url("js.jpg");
@@ -172,7 +168,21 @@ header img {
     object-fit: contain;
 }
 
-@media(max-width: 950px) {
+@media(max-width: 450px) {
+    .txt h2 {
+        font-size: 29px;
+    }
+}
+
+@media(max-width: 950px) and (min-width: 450px) {
+    .txt {
+        top: 25%;
+    }
+
+    .txt h2 {
+        font-size: 2em;
+    }
+
     header {
         background-color: #ffdee3;
         border-left: 6px solid #ff4081;
@@ -570,19 +580,19 @@ button:hover {
 @media (max-width: 950px) {
 
     nav {
-        width: 90%;
+        /* width: 90%; */
     }
 
     .dark-mode nav ul {
-        background-color: #000;
+        /* background-color: #000; */
     }
 
     nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        padding: 15px 0px;
-        background-color: #fbb6c1;
+        /* display: none; */
+        /* flex-direction: column; */
+        /* width: 100%; */
+        /* padding: 15px 0px; */
+        /* background-color: #fbb6c1; */
     }
 
     nav ul li {
@@ -593,7 +603,7 @@ button:hover {
         display: flex;
         flex-direction: column;
         align-items: left;
-        margin-right: 85%;
+        /* margin-right: 85%; */
     }
 
     nav ul.active {
