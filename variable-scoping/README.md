@@ -38,7 +38,7 @@ console.log(functionVar); // ReferenceError: functionVar is not defined
 ```
 
 ### 3. Block Scope
-Variables declared with let and const within a block (e.g., inside {}) are block-scoped and cannot be accessed outside that block.
+ES6 introduced the let and const keywords, which allow variables to have block scope. Variables declared with let and const within a block (e.g., inside {}, if statement, for loop) are block-scoped and cannot be accessed outside that block.
 
 Example:
 ```javascript

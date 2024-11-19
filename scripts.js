@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
         jsTopicsDataList.appendChild(newOption);
 
     })
-    console.log(jsTopicsDataListOptions);
 
     window.addEventListener('scroll', () => {
         const scrollPos = window.scrollY + window.innerHeight / 2;
@@ -172,10 +171,12 @@ update();
 let backToTopBtn = document.getElementById("backToTopBtn");
 
 window.onscroll = function () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        backToTopBtn.style.display = "block";
-    } else {
-        backToTopBtn.style.display = "none";
+    if(backToTopBtn){
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
     }
 };
 
@@ -208,12 +209,14 @@ function loadTheme() {
     const savedTheme = localStorage.getItem('theme');
 
     // Apply the saved theme (if exists) on page load
-    if (savedTheme === 'dark') {
-        document.querySelector('body').classList.add('dark-mode');
-        document.querySelector('#themeBtn').innerHTML = "Light-mode";
-    }
-    else {
-        document.querySelector('#themeBtn').innerHTML = "Dark-mode"; // Show option to switch to Dark Mode
+    if(document.querySelector('#themeBtn')){
+        if (savedTheme === 'dark') {
+            document.querySelector('body').classList.add('dark-mode');
+            document.querySelector('#themeBtn').innerHTML = "Light-mode";
+        }
+        else {
+            document.querySelector('#themeBtn').innerHTML = "Dark-mode"; // Show option to switch to Dark Mode
+        }
     }
 }
 
@@ -255,7 +258,7 @@ stars.forEach((star) => {
     });
 });
 
-submitBtn.addEventListener("click", () => {
+submitBtn?.addEventListener("click", () => {
     const review = reviewText.value;
     const userRating = parseInt(rating.innerText);
 

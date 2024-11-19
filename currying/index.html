@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Understanding Currying in JavaScript</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../main.css">
     <script type="module">
         import ZeroMd, { STYLES } from 'https://cdn.jsdelivr.net/npm/zero-md@3'
         customElements.define('zero-md', class extends ZeroMd {
@@ -24,29 +24,6 @@
     <nav>
         <a href="../index.html" class="back-btn">Go Back ↩</a>
     </nav>
-    <div class="container">
-        <h1>Currying in JavaScript</h1>
-
-        <h2>Why Is Currying in JavaScript Useful?</h2>
-        <p>Currying helps make your functions more reusable by breaking them into smaller, more manageable pieces. This
-            technique allows you to avoid passing all arguments at once and instead allows function composition.</p>
-
-        <h2>Currying vs. Partial Application in JavaScript</h2>
-        <p>Both currying and partial application allow you to pass arguments in steps, but they differ in their
-            approach:</p>
-        <ul>
-            <li><strong>Currying</strong>: A curried function takes one argument at a time and returns a new function
-                for the next argument.</li>
-            <li><strong>Partial Application</strong>: Partial application pre-fixes some arguments of a function and
-                returns a new function that takes the remaining arguments.</li>
-        </ul>
-
-        <h2>Example Project: Functional Discount Calculator</h2>
-        <p>This project demonstrates the power of currying by using it to apply different discount rates on products
-            using a curried discount function.</p>
-
-        <h3>Open the console to see the demonstration.</h3>
-    </div>
 
     <section class="content">
         <zero-md src="./README.md">

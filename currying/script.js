@@ -74,3 +74,20 @@ const itemPrice = 100;
 
 console.log("Price after 10% discount:", apply10PercentDiscount(itemPrice));  // Output: 90
 console.log("Price after 20% discount:", apply20PercentDiscount(itemPrice));  // Output: 80
+
+
+// Infinite currying 
+function add(a) {
+    return function (b) {
+      // If b is provided, the returned function recursively calls add with the updated sum (a + b).
+      if (b === undefined) {
+        console.log({a, b}, "inif");
+        return a; 
+      } else {
+        console.log({a, b}, "inelse");
+        return add(a + b); 
+      }
+    };
+  }
+  
+console.log(add(1)(5)(8)()); // Output: 6
