@@ -1,5 +1,13 @@
 let jsTopicsDataListOptions = []
 
+// adding back to top button
+if (window.location.pathname !== "/index.html") {
+    const button = document.createElement('button')
+    button.textContent = "Back to Top"
+    button.setAttribute('id', 'backToTopBtn')
+    document.body.insertBefore(button, document.body.lastChild)
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const jsTopicsDataList = document.getElementById('js-topics')
@@ -171,7 +179,7 @@ update();
 let backToTopBtn = document.getElementById("backToTopBtn");
 
 window.onscroll = function () {
-    if(backToTopBtn){
+    if (backToTopBtn) {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             backToTopBtn.style.display = "block";
         } else {
@@ -209,7 +217,7 @@ function loadTheme() {
     const savedTheme = localStorage.getItem('theme');
 
     // Apply the saved theme (if exists) on page load
-    if(document.querySelector('#themeBtn')){
+    if (document.querySelector('#themeBtn')) {
         if (savedTheme === 'dark') {
             document.querySelector('body').classList.add('dark-mode');
             document.querySelector('#themeBtn').innerHTML = "Light-mode";

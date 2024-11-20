@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Shadowing</title>
+    <link rel="stylesheet" href="../main.css">
+    <script type="module">
+        import ZeroMd, { STYLES } from 'https://cdn.jsdelivr.net/npm/zero-md@3'
+        customElements.define('zero-md', class extends ZeroMd {
+            async load() {
+                await super.load()
+                this.template = STYLES.preset('light')
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <div class="progress-bar">
+        <div class="filled"></div>
+    </div>
+    <nav>
+        <a href="../index.html" class="back-btn">Go Back ↩</a>
+    </nav>
+
+    <section class="content">
+        <zero-md src="./README.md">
+            <template data-append>
+                <style>
+                    #go-back- {
+                        display: none;
+                    }
+                </style>
+            </template>
+        </zero-md>
+    </section>
+    <script src="../scripts.js"></script>
+</body>
+
+</html>

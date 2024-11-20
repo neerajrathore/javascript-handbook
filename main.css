@@ -82,3 +82,29 @@ code {
     padding: 2px 5px;
     border-radius: 3px;
 }
+
+/* Back to Top Button */
+#backToTopBtn {
+    display: none; /* Hide the button initially */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 1s;
+}
+
+#backToTopBtn:hover {
+    background-color: #e91e63;
+    transform: translateY(-3px);
+}
+
+#backToTopBtn:active {
+    transform: translateY(1px);
+}
